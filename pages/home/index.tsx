@@ -19,16 +19,15 @@ function CreateVtuber(props: Props) {
   />
 }
 
-
-/* Index  */
-export default function Test() {
-
+/* Index */
+export default function Test(): JSX.Element {
   return (
     <>
     <Head>
       <title>Virtual Doggirls</title>
       <meta content="Virtual Doggirls" property="og:title"/>
     </Head>
+    <h1 style={{textAlign: "center"}}>Virtual Doggirls</h1>
     <HomeStyled>
       {data.doggirls.map((item) => (
         <li key={item.username}>
