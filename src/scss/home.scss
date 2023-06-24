@@ -1,5 +1,5 @@
 body {
-  background-color: mediumslateblue;
+  background-color: white;
 }
 
 main.list {
@@ -13,11 +13,11 @@ main.list {
 
   .vtuber {
     display: flex;
-    width: 350px;
+    width: 475px;
     border: solid 1px black;
     gap: 10px;
-    background-color: mediumpurple;
-    border-radius: 15px;
+    background-color: #7e37db;
+    border-radius: 16px;
 
     .avatar {
       height: 136px;
@@ -29,8 +29,16 @@ main.list {
       }
     }
 
-    .description {
+    .details {
       color: white;
+
+      .name {
+        font-size: 21px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
     }
   }
 }
