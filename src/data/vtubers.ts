@@ -12,6 +12,7 @@ type Social = {
 };
 
 type VTuber = {
+  featured?: boolean;
   name: string;
   username: string;
   description?: string;
@@ -147,6 +148,7 @@ const VTubers: VTuber[] = [
     social_media: [],
   },
   {
+    featured: true,
     name: "Klaire Fluffle",
     username: "klaire_fluffle",
     social_media: [],
