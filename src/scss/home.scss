@@ -1,0 +1,29 @@
+main.list {
+  display: flex;
+  justify-content: center;
+
+  align-items: stretch;
+  flex-wrap: wrap;
+  
+  gap: 20px;
+
+  .vtuber {
+    width: 350px;
+    border: solid 1px black;
+  }
+
+  img {
+    line-height: 110px;
+    text-align: center;
+    color: mediumpurple;
+    display: inline-block;
+    cursor: pointer;
+    width: 128px;
+    height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+    border-radius: 2px;
+    border: 4px solid white;
+    border-radius: 12.5%;
+  }
+}
