@@ -31,8 +31,8 @@ function CreateVtuber(props: IVtuberProps) {
       <div className="avatar">
         <Image
           src={`/img/avatar/${username}.webp`}
-          width={128}
-          height={128}
+          width={100}
+          height={100}
           alt={username}
         />
       </div>
