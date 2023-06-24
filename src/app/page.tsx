@@ -37,8 +37,10 @@ function CreateVtuber(props: IVtuberProps) {
         />
       </div>
       <div className="details">
-        <div className="name">{name}</div>
-        <div className="description">{description}</div>
+        <div className="about">
+          <div className="name">{name}</div>
+          <div className="description">{description}</div>
+        </div>
         <div className="social_media">
           {social_media.map((media, index) => (
             <Icon key={index} icon={media.icon} remote={media.url} size={32} />

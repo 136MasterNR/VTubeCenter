@@ -15,9 +15,9 @@ main.list {
     display: flex;
     width: 475px;
     border: solid 1px black;
-    gap: 10px;
+    gap: 9px;
     background-color: #7e37db;
-    border-radius: 16px;
+    border-radius: 16px 16px 16px 16px;
 
     .avatar {
       height: 136px;
@@ -30,14 +30,24 @@ main.list {
     }
 
     .details {
-      color: white;
+      display: flex;
+      justify-content: space-between;
 
-      .name {
-        font-size: 21px;
+      .about {
+        display: relative;
+        color: white;
+        gap: 10px;
+
+        .name {
+          font-size: 21px;
+        }
+
+        .description {
+          font-size: 15px;
+        }
       }
+      .social_media {
 
-      .description {
-        font-size: 15px;
       }
     }
   }
