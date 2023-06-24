@@ -1,30 +1,30 @@
-import "../scss/home.scss";
+import '../scss/home.scss'
 
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import VTubers from "../data/vtubers";
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import VTubers from '../data/vtubers'
 
-import Image from "next/image";
-import Icon from "../common/Icon";
+import Image from 'next/image'
+import Icon from '../common/Icon'
 
 interface ISocial {
-  icon: IconProp;
-  url: string;
+  icon: IconProp
+  url: string
 }
 
 interface IVtuberProps {
-  name: string;
-  username: string;
-  description?: string;
-  social_media: ISocial[];
+  name: string
+  username: string
+  description?: string
+  social_media: ISocial[]
 }
 
 function CreateVtuber(props: IVtuberProps) {
   const {
     name,
     username,
-    description = "No description provided.",
+    description = 'No description provided.',
     social_media,
-  } = props;
+  } = props
 
   return (
     <div className="vtuber">
@@ -43,18 +43,18 @@ function CreateVtuber(props: IVtuberProps) {
         </div>
         <div className="social_media">
           {social_media.map((media, index) => (
-            <Icon key={index} icon={media.icon} remote={media.url} size={32} />
+            <Icon key={index} icon={media.icon} remote={media.url} size={24} />
           ))}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default function Home(): JSX.Element {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Virtual Doggirls</h1>
+      <h1 style={{ textAlign: 'center' }}>Virtual Doggirls</h1>
       <main className="list">
         {VTubers.map(({ name, username, description, social_media }) => (
           <CreateVtuber
@@ -67,5 +67,5 @@ export default function Home(): JSX.Element {
         ))}
       </main>
     </div>
-  );
+  )
 }

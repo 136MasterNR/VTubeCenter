@@ -1,12 +1,12 @@
-"use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import Link from "next/link";
+'use client'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import Link from 'next/link'
 
 interface Props {
-  icon: IconProp;
-  remote: string;
-  size?: number;
+  icon: IconProp
+  remote: string
+  size?: number
 }
 
 export const Icon = ({ icon, remote, size }: Props) => {
@@ -14,7 +14,7 @@ export const Icon = ({ icon, remote, size }: Props) => {
     <Link draggable={false} href={remote} className="icon-link" target="_blank">
       <FontAwesomeIcon style={{ width: size, height: size }} icon={icon} />
     </Link>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon
