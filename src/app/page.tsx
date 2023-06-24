@@ -22,7 +22,7 @@ function CreateVtuber(props: IVtuberProps) {
   const {
     name,
     username,
-    description = "uh no desc yet plz put omegalul",
+    description = "No description provided.",
     social_media,
   } = props;
 
