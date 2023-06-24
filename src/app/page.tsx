@@ -1,6 +1,6 @@
 import "../scss/home.scss";
 
-import data from "../data/vtubers.json";
+import VTubers from "../data/vtubers";
 import Image from "next/image";
 
 interface Props {
@@ -29,12 +29,8 @@ export default function Home(): JSX.Element {
     <>
       <h1 style={{ textAlign: "center" }}>Virtual Doggirls</h1>
       <main className="list">
-        {data.doggirls.map((item) => (
-          <CreateVtuber
-            key={item.username}
-            username={item.username}
-            name={item.name}
-          />
+        {VTubers.map(({ name, username }) => (
+          <CreateVtuber key={username} username={username} name={name} />
         ))}
       </main>
     </>
