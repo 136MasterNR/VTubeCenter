@@ -1,20 +1,6 @@
 body {
-  height: 100%;
-  width: 100%;
-
-  .bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-
-    width: 100%;
-    z-index: -1;
-    background: linear-gradient(140deg, rgb(181, 101, 242), rgb(92, 92, 227));
-  }
+  background-color: white;
 }
-
-
 
 main.list {
   display: flex;
@@ -32,7 +18,7 @@ main.list {
     height: 136px;
     width: 475px;
 
-    background: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(45deg, #ffffff, #f9f3ff);
     border-radius: 0.5em;
 
     box-shadow: 0 0 25px rgba($color: #000000, $alpha: 0.025);
@@ -40,7 +26,7 @@ main.list {
     transition: 0.25s ease;
 
     &:hover {
-      transform: translateY(-6px);
+      transform: translateY(-10px);
     }
 
     .avatar {
@@ -93,21 +79,19 @@ main.list {
 
         a {
           padding: 3.75px;
-          width: 25px;
-          height: 25px;
 
           text-decoration: none;
           color: white;
+
+          background-color: #a34dff;
+          border-radius: 99em;
           
           transition: 0.25s ease;
 
           &:hover {
-            scale: 1.1;
-          }
-
-          svg {
-            position: relative;
-            top: 0.5px;
+            scale: 1.2;
+            color: #a34dff;
+            background-color: transparent;
           }
         }
       }
