@@ -1,5 +1,21 @@
 body {
   background-color: white;
+
+  .bg {
+    position: fixed;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -9;
+    background-color: rgb(25, 25, 25);
+  }
+}
+
+.title {
+  text-align: center;
+  color: white;
 }
 
 main.list {
@@ -18,15 +34,15 @@ main.list {
     height: 136px;
     width: 475px;
 
-    background: linear-gradient(45deg, #ffffff, #f9f3ff);
+    background-color: darken($color: #171717, $amount: 0);
     border-radius: 0.5em;
-
-    box-shadow: 0 0 25px rgba($color: #000000, $alpha: 0.025);
+    border: solid 2px rgb(144, 148, 255);
+    cursor: pointer;
 
     transition: 0.25s ease;
 
     &:hover {
-      transform: translateY(-10px);
+      transform: translateY(-4px);
     }
 
     .avatar {
@@ -49,7 +65,7 @@ main.list {
 
       .about {
         padding: 15px 0;
-        color: #a34dff;
+        color: white;
         gap: 10px;
 
         .name {
@@ -83,9 +99,9 @@ main.list {
           text-decoration: none;
           color: white;
 
-          background-color: #a34dff;
+          background-color: transparent;
           border-radius: 99em;
-          
+
           transition: 0.25s ease;
 
           &:hover {

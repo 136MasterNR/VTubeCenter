@@ -54,7 +54,7 @@ function CreateVtuber(props: IVtuberProps) {
 export default function Home(): JSX.Element {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Virtual Doggirls</h1>
+      <h1 className="title">Virtual Doggirls</h1>
       <main className="list">
         {VTubers.map(({ name, username, description, social_media }) => (
           <CreateVtuber
