@@ -73,7 +73,7 @@ function CreateVtuber(props: IVtuberProps) {
       <div className={`affiliation ${fontJP.className}`}>
         {affiliation !== 'Independent' ? (
           <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faBuildingUser}/> {affiliation}
+            <FontAwesomeIcon icon={faBuildingUser} size="sm"/> {affiliation}
           </a>
         ) : null}
       </div>

@@ -51,7 +51,7 @@ const VTubers: VTuber[] = [
   {
     name: 'Yuniiho',
     username: 'yuniiho',
-    description: 'No description provided.',
+    description: 'Yuniiho is very upbeat and excitable, though this may not show when she is focusing on her artwork. During her art streams, her attention often gets tugged between interacting with her chat and working on her commissions, occasionally leading to not much work getting done.',
     language: 'English',
     affiliation: 'Vyugen', affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
     social_media: [
@@ -84,9 +84,9 @@ const VTubers: VTuber[] = [
   {
     name: 'Shiki Miyoshino',
     username: 'shiki_miyoshino',
-    description: 'No description provided.',
+    description: 'Shiki has a tomboyish personality. She is a big fan of anything related to the occult and the unknown. She is also a masochist and likes to grieve.',
     language: 'English',
-    affiliation: 'Independent',
+    affiliation: 'PRISM Project', affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
     social_media: [
       {
         icon: faYoutube,
@@ -107,7 +107,7 @@ const VTubers: VTuber[] = [
     username: 'rui_seshima',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
+    affiliation: 'AniMare', affiliationURL: 'https://www.774.ai/talent/rui-seshima',
     social_media: [
       {
         icon: faYoutube,
@@ -122,9 +122,9 @@ const VTubers: VTuber[] = [
   {
     name: 'Hunikin',
     username: 'hunikinn',
-    description: 'No description provided.',
+    description: 'Huni is your chaotic emotional support dog! She has been described as mostly hyper, chaotic, feral, and downright insane, and she loves destruction and murder far too much- but she is mostly a doggo with a heart of gold.',
     language: 'English',
-    affiliation: 'Independent',
+    affiliation: 'Kawa Entertainment', affiliationURL: 'https://kawaentertainment.com/talent/hunikin',
     social_media: [
       {
         icon: faYoutube,
@@ -147,9 +147,9 @@ const VTubers: VTuber[] = [
   {
     name: 'Pochi Wanmaru',
     username: 'pochi_wanmaru',
-    description: 'No description provided.',
+    description: 'Pochi is lively, caring, and interactive. She reflects a growth mindset with her passion for gaming, showing an interest in various genres.',
     language: 'English',
-    affiliation: 'Independent',
+    affiliation: 'idolEN', affiliationURL: 'https://idol-company.com/pochi/',
     social_media: [
       {
         icon: faYoutube,
@@ -170,8 +170,17 @@ const VTubers: VTuber[] = [
     username: 'inui_toko',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    affiliation: 'Nijisanji', affiliationURL: 'https://www.nijisanji.jp/en/talents/l/toko-inui',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCXRlIK3Cw_TJIQC5kSJJQMg',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/inui_toko',
+      },
+    ],
   },
   {
     name: 'Feef',
@@ -179,7 +188,20 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCgcx0pQsUO9KF2bF-n9MgUQ',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/feefch',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/FeefCh',
+      },
+    ],
   },
   {
     name: 'Meika',
@@ -187,7 +209,24 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/meikapuppy',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/meikapuppy',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/aNfCXW6',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/meikapuff',
+      },
+    ],
   },
   {
     name: 'Enocinoco',
