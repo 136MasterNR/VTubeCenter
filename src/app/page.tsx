@@ -3,17 +3,20 @@ import '../scss/home.scss'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import VTubers from '../data/vtubers'
 
-import Image from 'next/image'
 import Icon from '../common/Icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBuildingUser,
-} from '@fortawesome/free-solid-svg-icons'
+import { faBuildingUser } from '@fortawesome/free-solid-svg-icons'
 
 import { Poppins } from 'next/font/google'
 import { Noto_Sans_JP } from 'next/font/google'
-const fontPoppins = Poppins({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
-const fontJP = Noto_Sans_JP({ subsets: ['latin'], weight: ["400"] })
+const fontPoppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
+const fontJP = Noto_Sans_JP({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+})
 
 interface ISocial {
   icon: IconProp
@@ -30,11 +33,6 @@ interface IVtuberProps {
   social_media: ISocial[]
 }
 
-function IsAffiliated({ username }: { username: string; }) {
-  let color;
-  return color
-}
-
 function CreateVtuber(props: IVtuberProps) {
   const {
     name,
@@ -49,16 +47,14 @@ function CreateVtuber(props: IVtuberProps) {
   return (
     <div className="vtuber">
       <div className="banner">
-        <img src={`/img/header/${username}.webp`} alt={username}/>
+        <img src={`/img/header/${username}.webp`} alt={username} />
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username}/>
+        <img src={`/img/avatar/${username}.webp`} alt={username} />
       </div>
 
-      <div className="language">
-        {language}
-      </div>
+      <div className="language">{language}</div>
 
       <div className="social_media">
         {social_media.map((media, index) => (
@@ -66,21 +62,25 @@ function CreateVtuber(props: IVtuberProps) {
         ))}
       </div>
 
-      <div className={`name ${fontJP.className}`}>
-        {name}
-      </div>
+      <div className={`name ${fontJP.className}`}>{name}</div>
 
       <div className={`affiliation ${fontJP.className}`}>
         {affiliation !== 'Independent' ? (
           <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faBuildingUser} size="sm"/> {affiliation}
+            <FontAwesomeIcon
+              icon={faBuildingUser}
+              scale={24}
+              width={24}
+              height={24}
+            />
+            {affiliation}
           </a>
-        ) : null}
+        ) : (
+          'Independant'
+        )}
       </div>
 
-      <div className="description">
-       {description}
-      </div>
+      <div className="description">{description}</div>
     </div>
   )
 }
@@ -91,9 +91,9 @@ export default function Home(): JSX.Element {
       <h1 className="title">Virtual Doggirls</h1>
 
       <main className="list">
-      {VTubers.map((vtuber) => (
-        <CreateVtuber key={vtuber.username} {...vtuber} />
-      ))}
+        {VTubers.map((vtuber) => (
+          <CreateVtuber key={vtuber.username} {...vtuber} />
+        ))}
       </main>
     </div>
   )
