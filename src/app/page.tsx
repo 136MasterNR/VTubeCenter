@@ -37,7 +37,7 @@ function CreateVtuber(props: IVtuberProps) {
         <img src={`/img/avatar/${username}.webp`} alt={username}/>
       </div>
       <div className="language">
-        {{language}}
+        {language}
       </div>
     </div>
   )
