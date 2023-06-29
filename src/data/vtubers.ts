@@ -316,7 +316,28 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCX7GV7aCQqytrw_jzuiPCWQ',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/kimicchi_ch',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://doggirls.pages.dev/#warnModal',
+      },
+      {
+        icon: faDiscord,
+        url: 'http://discord.gg/8xbj8yKCdb',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@kimicchi_ch',
+      },
+    ],
   },
   {
     name: 'Nadeshiko Komae',

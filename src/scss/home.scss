@@ -61,11 +61,10 @@ main.list {
         object-fit: cover;
         border-radius: 7.5px 7.5px 0px 0px;
 
+        background-color: white;
         mask-image: url('/img/header/mask.svg');
         mask-position: 0px center;
         mask-size: 435px 110px;
-
-        cursor: pointer;
       }
     }
 
@@ -81,6 +80,8 @@ main.list {
       img {
         width: 85px;
         height: auto;
+
+        background-color: white;
 
         border-radius: 20px;
         margin: 5px;
@@ -120,6 +121,7 @@ main.list {
         color: white;
 
         transition: 0.1s transform;
+
         &:hover {
           transform: scale(1.1);
         }
@@ -140,8 +142,6 @@ main.list {
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-
-      cursor: pointer;
     }
 
     .affiliation {

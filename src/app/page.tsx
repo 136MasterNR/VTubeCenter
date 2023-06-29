@@ -30,6 +30,11 @@ interface IVtuberProps {
   social_media: ISocial[]
 }
 
+function IsAffiliated({ username }: { username: string; }) {
+  let color;
+  return color
+}
+
 function CreateVtuber(props: IVtuberProps) {
   const {
     name,
@@ -61,7 +66,7 @@ function CreateVtuber(props: IVtuberProps) {
         ))}
       </div>
 
-      <div className="name">
+      <div className={`name ${fontJP.className}`}>
         {name}
       </div>
 
@@ -86,26 +91,9 @@ export default function Home(): JSX.Element {
       <h1 className="title">Virtual Doggirls</h1>
 
       <main className="list">
-        {VTubers.map(({
-          name,
-          username,
-          description,
-          language,
-          affiliation,
-          affiliationURL,
-          social_media
-        }) => (
-          <CreateVtuber
-            key={username}
-            username={username}
-            name={name}
-            description={description}
-            language={language}
-            affiliation={affiliation}
-            affiliationURL={affiliationURL}
-            social_media={social_media}
-          />
-        ))}
+      {VTubers.map((vtuber) => (
+        <CreateVtuber key={vtuber.username} {...vtuber} />
+      ))}
       </main>
     </div>
   )
