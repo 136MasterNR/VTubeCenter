@@ -69,7 +69,6 @@ function CreateVtuber(props: IVtuberProps) {
           <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faBuildingUser}
-              scale={24}
               width={24}
               height={24}
             />

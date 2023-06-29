@@ -29,6 +29,7 @@ main.list {
 
     &:active {
       transform: translateY(0);
+      outline: none;
     }
 
     background: linear-gradient(
@@ -55,7 +56,6 @@ main.list {
         object-fit: cover;
         border-radius: 7.5px 7.5px 0px 0px;
 
-        background-image: url('/img/header/unknown.webp');
         background-position: center;
         background-size: cover;
         mask-image: url('/img/header/mask.svg');
@@ -102,10 +102,11 @@ main.list {
       position: relative;
       display: flex;
       max-width: 215px;
+      min-height: 26px;
       cursor: auto;
 
       flex-direction: row;
-      justify-content: right;
+      justify-content: flex-end;
 
       top: -130px;
       right: -225px;
@@ -157,7 +158,7 @@ main.list {
         transition: 0.15s ease;
 
         &:hover {
-          color: #e17f00;
+          color: #bdccdd;
         }
       }
     }
