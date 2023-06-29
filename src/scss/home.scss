@@ -195,3 +195,11 @@ main.list {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  main.list {
+    position: relative;
+    transform: scale(0.9);
+    top: -700px;
+  }
+}
