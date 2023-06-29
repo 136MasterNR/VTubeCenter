@@ -47,22 +47,35 @@ function CreateVtuber(props: IVtuberProps) {
   return (
     <div className="vtuber">
       <div className="banner">
-        <img src={`/img/header/${username}.webp`} alt={username} />
+        <img
+          src={`/img/header/${username}.webp`}
+          alt={username}
+        />
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username} />
+        <img
+          src={`/img/avatar/${username}.webp`}
+          alt={username}
+        />
       </div>
 
       <div className="language">{language}</div>
 
       <div className="social_media">
         {social_media.map((media, index) => (
-          <Icon key={index} icon={media.icon} remote={media.url} size={26} />
+          <Icon
+            key={index}
+            icon={media.icon}
+            remote={media.url}
+            size={26}
+          />
         ))}
       </div>
 
-      <div className={`name ${fontJP.className}`}>{name}</div>
+      <div className={`name ${fontJP.className}`}>
+        {name}
+      </div>
 
       <div className={`affiliation ${fontJP.className}`}>
         {affiliation !== 'Independent' ? (
@@ -77,7 +90,9 @@ function CreateVtuber(props: IVtuberProps) {
         ) : null}
       </div>
 
-      <div className="description">{description}</div>
+      <div className="description">
+        {description}
+      </div>
     </div>
   )
 }
@@ -89,7 +104,7 @@ export default function Home(): JSX.Element {
 
       <main className="list">
         {VTubers.map((vtuber) => (
-          <CreateVtuber key={vtuber.username} {...vtuber} />
+          <CreateVtuber key={vtuber.username} {...vtuber}/>
         ))}
       </main>
     </div>

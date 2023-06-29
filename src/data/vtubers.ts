@@ -234,7 +234,32 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCyxwxZCebYm6KoxVu154-9g',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/enocinoco',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/enocinoco',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.gg/SwXxcPE',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/enocinoco/',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@enocinoco',
+      },
+    ],
   },
   {
     name: 'Inukai Purin',
@@ -242,7 +267,24 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCdrQWcX7XLDSUEh9SAxnyBg',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/inukaipurin',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/inukaipurin',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/purinhub',
+      },
+    ],
   },
   {
     name: 'Kore',
@@ -250,7 +292,24 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/c/korech',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/shibakore',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/ShibaKore',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/QPdhMAPEHK',
+      },
+    ],
   },
   {
     name: 'Chibi',
