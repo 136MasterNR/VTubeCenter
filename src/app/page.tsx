@@ -5,6 +5,16 @@ import VTubers from '../data/vtubers'
 
 import Image from 'next/image'
 import Icon from '../common/Icon'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faYoutube,
+  faHackerNews,
+} from '@fortawesome/free-brands-svg-icons'
+
+import { Poppins } from 'next/font/google'
+import {  Noto_Sans_JP  } from 'next/font/google'
+const fontPoppins = Poppins({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const fontJP = Noto_Sans_JP({ subsets: ['latin'], weight: ["400"] })
 
 interface ISocial {
   icon: IconProp
@@ -24,7 +34,7 @@ function CreateVtuber(props: IVtuberProps) {
   const {
     name,
     username,
-    description = 'No description provided.',
+    description,
     language,
     affiliation,
     social_media,
@@ -46,11 +56,14 @@ function CreateVtuber(props: IVtuberProps) {
           <Icon key={index} icon={media.icon} remote={media.url} size={26} />
         ))}
       </div>
-      <div className="affiliation">
-       「{affiliation}」
-      </div>
       <div className="name">
         {name}
+      </div>
+      <div className={`affiliation ${fontJP.className}`}>
+      <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">{affiliation} <FontAwesomeIcon icon={faHackerNews}/> </a>
+      </div>
+      <div className="description">
+       {description}
       </div>
     </div>
   )

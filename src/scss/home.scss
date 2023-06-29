@@ -31,7 +31,14 @@ main.list {
 
   .vtuber {
     width: 450px;
-    height: 310px;
+    height: 333px;
+
+    transition: 0.08s transform, 0.2s background-color;
+
+    &:hover {
+      transform: translateY(-5px);
+      background-color: rgb(58, 56, 81);
+    }
 
     background: linear-gradient(
         45deg,
@@ -39,6 +46,7 @@ main.list {
         rgba(255, 255, 255, 0.15) 100%
       ),
       #2d2c3f;
+
     box-shadow: 0px -15px 0px 0px rgba(0, 0, 0, 0.25) inset;
     border-radius: 15px;
 
@@ -58,6 +66,8 @@ main.list {
         mask-image: url('/img/header/mask.svg');
         mask-position: 0px center;
         mask-size: 435px 110px;
+        
+        cursor: pointer;
       }
     }
 
@@ -65,6 +75,10 @@ main.list {
       position: relative;
       top: -55.25px;
       right: -10.55px;
+
+      width: fit-content;
+
+      cursor: pointer;
 
       img {
         width: 85px;
@@ -97,7 +111,7 @@ main.list {
       width: 215px;
 
       flex-direction: row;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
       gap: 10px;
 
@@ -109,32 +123,48 @@ main.list {
       }
     }
 
-    .affiliation {
-      position: relative;
-      top: -135px;
-      right: -150px;
-
-      color: #FFF;
-      text-align: center;
-      font-size: 17px;
-      font-family: "Poppins", sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal; 
-    }
-
     .name {
       position: relative;
-      top: -115px;
+      top: -117.5px;
       right: -10px;
+      
+      width: fit-content;
 
       color: #FFF;
       text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.10);
       font-size: 26px;
-      font-family: Plus Jakarta Sans;
+      font-family: 'Plus Jakarta Sans';
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       line-height: normal; 
+
+      cursor: pointer;
+    }
+
+    .affiliation {
+      position: relative;
+      top: -122px;
+      right: -10px;
+
+      width: fit-content;
+
+      a {
+        color: #ebebeb;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        text-decoration-line: none;
+      }
+    }
+
+    .description {
+      position: relative;
+      top: -122px;
+
+      margin: 10px;
+
+      color: #dedede;
+      font-size: 16.5px;
     }
   }
 }
