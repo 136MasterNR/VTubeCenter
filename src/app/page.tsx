@@ -75,9 +75,7 @@ function CreateVtuber(props: IVtuberProps) {
             />
             {affiliation}
           </a>
-        ) : (
-          'Independant'
-        )}
+        ) : null}
       </div>
 
       <div className="description">{description}</div>

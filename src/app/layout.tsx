@@ -36,7 +36,7 @@ export const metadata = {
       'https://github.com/136MasterNR/VTubeCenter/raw/migration/app/public/img/seo/embed.jpg',
     title: 'VTube Center',
     card: 'summary_large_image',
-    creator: '@136MasterNR and @Naibuu', // omg credited! plz dont remove me balls
+    creator: '@136MasterNR and @Naibuu',
   },
 }
 

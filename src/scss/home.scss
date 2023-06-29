@@ -136,7 +136,6 @@ main.list {
       color: #fff;
       text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
       font-size: 26px;
-      font-family: 'Plus Jakarta Sans';
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -173,22 +172,25 @@ main.list {
 
       padding-right: 10px;
 
-      line-height: 25px;
+      line-height: 21.1px;
       color: #dedede;
-      text-align: justify;
+      text-align: start;
       font-size: 16px;
       font-weight: 500;
       word-wrap: normal;
       overflow-y: auto;
+
+      scrollbar-color: lightgray rgba($color: #ffffff, $alpha: 0.1);
+      scrollbar-width: thin;
     }
 
     ::-webkit-scrollbar-thumb {
-      background-color: #e17f00;
+      background-color: lightgray;
       border-radius: 99em;
     }
 
     ::-webkit-scrollbar-track {
-      background-color: rgba($color: #ffffff, $alpha: 0.2);
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
       border-radius: 99em;
     }
   }
