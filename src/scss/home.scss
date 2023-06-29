@@ -28,89 +28,48 @@ main.list {
   gap: 20px;
 
   .vtuber {
-    display: flex;
-    gap: 9px;
+    width: 450px;
+    height: 275px;
 
-    height: 136px;
-    width: 475px;
+    background: linear-gradient(
+        45deg,
+        rgba(225, 127, 0, 0.15) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+      ),
+      #2d2c3f;
+    box-shadow: 0px -15px 0px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 15px;
 
-    background-color: darken($color: #171717, $amount: 0);
-    border-radius: 0.5em;
-    border: solid 2px rgb(144, 148, 255);
-    cursor: pointer;
-
-    transition: 0.25s ease;
-
-    &:hover {
-      transform: translateY(-4px);
-    }
-
-    .avatar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: calc(100% - 300px);
+    .banner {
+      overflow: hidden;
+      width: 450px;
+      height: 130px;
 
       img {
-        border: 4px solid white;
-        border-radius: 15px;
+        margin: 7.5px;
+        width: 435px;
+        height: 110px;
+
+        object-fit: cover;
+        border-radius: 7.5px;
+
+        mask-image: url('/img/header/mask.svg');
+        mask-position: 0px center;
+        mask-size: 435px;
       }
     }
 
-    .details {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+    .avatar img {
+      position: relative;
 
-      .about {
-        padding: 15px 0;
-        color: white;
-        gap: 10px;
+      width: 85px;
+      height: auto;
 
-        .name {
-          font-weight: 800;
-          font-size: 24px;
-        }
+      top: -55px;
+      right: -10px;
 
-        .description {
-          font-size: 15px;
-        }
-      }
-
-      .social_media {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        align-items: center;
-        flex-wrap: wrap;
-
-        height: 115px;
-        width: 60px;
-
-        gap: 2.5px;
-
-        margin: auto 12.5px auto 0;
-
-        a {
-          padding: 3.75px;
-
-          text-decoration: none;
-          color: white;
-
-          background-color: transparent;
-          border-radius: 99em;
-
-          transition: 0.25s ease;
-
-          &:hover {
-            scale: 1.2;
-            color: #a34dff;
-            background-color: transparent;
-          }
-        }
-      }
+      border-radius: 20px;
+      margin: 5px;
     }
   }
 }
