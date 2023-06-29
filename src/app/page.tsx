@@ -16,6 +16,7 @@ interface IVtuberProps {
   username: string
   description: string
   language: string
+  affiliation: string
   social_media: ISocial[]
 }
 
@@ -25,6 +26,7 @@ function CreateVtuber(props: IVtuberProps) {
     username,
     description = 'No description provided.',
     language,
+    affiliation,
     social_media,
   } = props
 
@@ -39,6 +41,17 @@ function CreateVtuber(props: IVtuberProps) {
       <div className="language">
         {language}
       </div>
+      <div className="social_media">
+        {social_media.map((media, index) => (
+          <Icon key={index} icon={media.icon} remote={media.url} size={26} />
+        ))}
+      </div>
+      <div className="affiliation">
+       「{affiliation}」
+      </div>
+      <div className="name">
+        {name}
+      </div>
     </div>
   )
 }
@@ -48,13 +61,21 @@ export default function Home(): JSX.Element {
     <div>
       <h1 className="title">Virtual Doggirls</h1>
       <main className="list">
-        {VTubers.map(({ name, username, description, language, social_media }) => (
+        {VTubers.map(({
+          name,
+          username,
+          description,
+          language,
+          affiliation,
+          social_media
+        }) => (
           <CreateVtuber
             key={username}
             username={username}
             name={name}
             description={description}
             language={language}
+            affiliation={affiliation}
             social_media={social_media}
           />
         ))}

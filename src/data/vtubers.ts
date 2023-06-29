@@ -17,6 +17,7 @@ type VTuber = {
   username: string
   description: string
   language: string
+  affiliation: string
   social_media: Social[]
 }
 
@@ -26,6 +27,7 @@ const VTubers: VTuber[] = [
     username: 'inugami_korone',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Hololive Gamers',
     social_media: [
       {
         icon: faYoutube,
@@ -45,7 +47,8 @@ const VTubers: VTuber[] = [
     name: 'Yuniiho',
     username: 'yuniiho',
     description: 'No description provided.',
-    language: 'Japanese',
+    language: 'English',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -53,6 +56,7 @@ const VTubers: VTuber[] = [
     username: 'shiki_miyoshino',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -60,6 +64,7 @@ const VTubers: VTuber[] = [
     username: 'rui_seshima',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -67,6 +72,7 @@ const VTubers: VTuber[] = [
     username: 'hunikinn',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -74,6 +80,7 @@ const VTubers: VTuber[] = [
     username: 'pochi_wanmaru',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -81,6 +88,7 @@ const VTubers: VTuber[] = [
     username: 'enocinoco',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -88,6 +96,7 @@ const VTubers: VTuber[] = [
     username: 'inukai_purin',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -95,6 +104,7 @@ const VTubers: VTuber[] = [
     username: 'inui_toko',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -102,6 +112,7 @@ const VTubers: VTuber[] = [
     username: 'shibakore',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -109,6 +120,7 @@ const VTubers: VTuber[] = [
     username: 'chibichinu',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -116,6 +128,7 @@ const VTubers: VTuber[] = [
     username: 'kyundere',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -123,6 +136,7 @@ const VTubers: VTuber[] = [
     username: 'inunaka_akari',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -130,6 +144,7 @@ const VTubers: VTuber[] = [
     username: 'feef',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -137,6 +152,7 @@ const VTubers: VTuber[] = [
     username: 'sino_shinomiya',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -144,6 +160,7 @@ const VTubers: VTuber[] = [
     username: 'buffpup',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -151,6 +168,7 @@ const VTubers: VTuber[] = [
     username: 'cece',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -158,6 +176,7 @@ const VTubers: VTuber[] = [
     username: 'cobalt_puppy',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -165,6 +184,7 @@ const VTubers: VTuber[] = [
     username: 'meika',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -172,6 +192,7 @@ const VTubers: VTuber[] = [
     username: 'lunpai',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -179,6 +200,7 @@ const VTubers: VTuber[] = [
     username: 'mai',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -186,6 +208,7 @@ const VTubers: VTuber[] = [
     username: 'tayto',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -194,6 +217,7 @@ const VTubers: VTuber[] = [
     username: 'klaire_fluffle',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -201,6 +225,7 @@ const VTubers: VTuber[] = [
     username: 'mango',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -208,6 +233,7 @@ const VTubers: VTuber[] = [
     username: 'kimicchi_ch',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -215,6 +241,7 @@ const VTubers: VTuber[] = [
     username: 'nadeshiko_komae',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -222,6 +249,7 @@ const VTubers: VTuber[] = [
     username: '小柴起司',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -229,6 +257,7 @@ const VTubers: VTuber[] = [
     username: 'jiya',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -236,6 +265,7 @@ const VTubers: VTuber[] = [
     username: 'lynna_vt',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -243,6 +273,7 @@ const VTubers: VTuber[] = [
     username: 'norashitagai',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -250,6 +281,7 @@ const VTubers: VTuber[] = [
     username: 'ywumaru',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -257,6 +289,7 @@ const VTubers: VTuber[] = [
     username: 'artstudebt',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -264,6 +297,7 @@ const VTubers: VTuber[] = [
     username: 'puppypoyon',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -271,6 +305,7 @@ const VTubers: VTuber[] = [
     username: '2dpupy',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -278,6 +313,7 @@ const VTubers: VTuber[] = [
     username: 'kuromikate',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -285,6 +321,7 @@ const VTubers: VTuber[] = [
     username: 'aqtiee_ttv',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -292,6 +329,7 @@ const VTubers: VTuber[] = [
     username: 'imasamwich',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -299,6 +337,7 @@ const VTubers: VTuber[] = [
     username: 'ribbonfemale',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -306,6 +345,7 @@ const VTubers: VTuber[] = [
     username: 'PopRoxy4',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
   {
@@ -313,6 +353,7 @@ const VTubers: VTuber[] = [
     username: 'miffygeist',
     description: 'No description provided.',
     language: 'Japanese',
+    affiliation: 'Independent',
     social_media: [],
   },
 ]

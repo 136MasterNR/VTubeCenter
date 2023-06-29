@@ -1,3 +1,5 @@
+
+
 body {
   background-color: white;
 
@@ -29,7 +31,7 @@ main.list {
 
   .vtuber {
     width: 450px;
-    height: 275px;
+    height: 310px;
 
     background: linear-gradient(
         45deg,
@@ -51,25 +53,88 @@ main.list {
         height: 110px;
 
         object-fit: cover;
-        border-radius: 7.5px;
+        border-radius: 7.5px 7.5px 0px 0px;
 
         mask-image: url('/img/header/mask.svg');
         mask-position: 0px center;
-        mask-size: 435px;
+        mask-size: 435px 110px;
       }
     }
 
-    .avatar img {
+    .avatar {
       position: relative;
+      top: -55.25px;
+      right: -10.55px;
 
-      width: 85px;
-      height: auto;
+      img {
+        width: 85px;
+        height: auto;
 
-      top: -55px;
+        border-radius: 20px;
+        margin: 5px;
+      }
+    }
+
+    .language {
+      position: relative;
+      top: -102.5px;
+      right: -110px;
+      width: fit-content;
+      padding: 3px 10px 4px 10px;
+      border-radius: 5px;
+
+      background-color: #e17f00;
+
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .social_media {
+      position: relative;
+      display: flex;
+      width: 215px;
+
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      top: -130px;
+      right: -225px;
+
+      svg {
+        color: white;
+      }
+    }
+
+    .affiliation {
+      position: relative;
+      top: -135px;
+      right: -150px;
+
+      color: #FFF;
+      text-align: center;
+      font-size: 17px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal; 
+    }
+
+    .name {
+      position: relative;
+      top: -115px;
       right: -10px;
 
-      border-radius: 20px;
-      margin: 5px;
+      color: #FFF;
+      text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.10);
+      font-size: 26px;
+      font-family: Plus Jakarta Sans;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; 
     }
   }
 }
