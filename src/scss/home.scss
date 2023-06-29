@@ -1,5 +1,3 @@
-
-
 body {
   background-color: white;
 
@@ -66,7 +64,7 @@ main.list {
         mask-image: url('/img/header/mask.svg');
         mask-position: 0px center;
         mask-size: 435px 110px;
-        
+
         cursor: pointer;
       }
     }
@@ -120,6 +118,11 @@ main.list {
 
       svg {
         color: white;
+
+        transition: 0.1s transform;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -127,16 +130,16 @@ main.list {
       position: relative;
       top: -117.5px;
       right: -10px;
-      
+
       width: fit-content;
 
-      color: #FFF;
-      text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.10);
+      color: #fff;
+      text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
       font-size: 26px;
       font-family: 'Plus Jakarta Sans';
       font-style: normal;
       font-weight: 600;
-      line-height: normal; 
+      line-height: normal;
 
       cursor: pointer;
     }
@@ -161,10 +164,13 @@ main.list {
       position: relative;
       top: -122px;
 
+      width: fit-content;
+      height: 84px;
       margin: 10px;
 
       color: #dedede;
       font-size: 16.5px;
+      word-wrap: normal;
     }
   }
 }

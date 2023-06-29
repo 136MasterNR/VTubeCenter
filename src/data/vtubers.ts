@@ -6,6 +6,7 @@ import {
   faTwitter,
   faDiscord,
   faInstagram,
+  faTiktok,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -21,6 +22,7 @@ type VTuber = {
   description: string
   language: string
   affiliation: string
+  affiliationURL?: string
   social_media: Social[]
 }
 
@@ -30,7 +32,7 @@ const VTubers: VTuber[] = [
     username: 'inugami_korone',
     description: 'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
     language: 'Japanese',
-    affiliation: 'Hololive Gamers',
+    affiliation: 'Hololive Gamers', affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
     social_media: [
       {
         icon: faYoutube,
@@ -51,7 +53,7 @@ const VTubers: VTuber[] = [
     username: 'yuniiho',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
+    affiliation: 'Vyugen', affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
     social_media: [
       {
         icon: faYoutube,
@@ -85,7 +87,20 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/c/shikimiyoshino',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/ShikiMiyoshino',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@shikimiyoshino',
+      },
+    ],
   },
   {
     name: 'Rui Seshima',
@@ -93,7 +108,16 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'Japanese',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UC_WOBIopwUih0rytRnr_1Ag',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Rui_Seshima',
+      },
+    ],
   },
   {
     name: 'Hunikin',
@@ -101,11 +125,65 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
-    social_media: [],
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCfcVgQ0mKaEwzVqmGYTMayA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/hunikinn',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/hunikinn',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/7ch9rVJZua',
+      },
+    ],
   },
   {
     name: 'Pochi Wanmaru',
     username: 'pochi_wanmaru',
+    description: 'No description provided.',
+    language: 'English',
+    affiliation: 'Independent',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCP0csSl19lOSNwJGCFsJqAQ',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/PochiWanmaru',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@pochiwanmaru',
+      },
+    ],
+  },
+  {
+    name: 'Inui Toko',
+    username: 'inui_toko',
+    description: 'No description provided.',
+    language: 'Japanese',
+    affiliation: 'Independent',
+    social_media: [],
+  },
+  {
+    name: 'Feef',
+    username: 'feefch',
+    description: 'No description provided.',
+    language: 'English',
+    affiliation: 'Independent',
+    social_media: [],
+  },
+  {
+    name: 'Meika',
+    username: 'meikapuppy',
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
@@ -124,14 +202,6 @@ const VTubers: VTuber[] = [
     username: 'inukai_purin',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
-  },
-  {
-    name: 'Inui Toko',
-    username: 'inui_toko',
-    description: 'No description provided.',
-    language: 'Japanese',
     affiliation: 'Independent',
     social_media: [],
   },
@@ -162,14 +232,6 @@ const VTubers: VTuber[] = [
   {
     name: 'Inunaka Akari',
     username: 'inunaka_akari',
-    description: 'No description provided.',
-    language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
-  },
-  {
-    name: 'Feef',
-    username: 'feef',
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
@@ -208,14 +270,6 @@ const VTubers: VTuber[] = [
     social_media: [],
   },
   {
-    name: 'Meika',
-    username: 'meika',
-    description: 'No description provided.',
-    language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
-  },
-  {
     name: 'Lunpai',
     username: 'lunpai',
     description: 'No description provided.',
@@ -233,7 +287,7 @@ const VTubers: VTuber[] = [
   },
   {
     name: 'Tayto',
-    username: 'English',
+    username: 'tayto',
     description: 'No description provided.',
     language: 'Japanese',
     affiliation: 'Independent',
