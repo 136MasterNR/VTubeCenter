@@ -178,6 +178,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'Japanese',
     affiliation: 'Nijisanji', affiliationURL: 'https://www.nijisanji.jp/en/talents/l/toko-inui',
+    colorScheme: "178, 93, 54",
     social_media: [
       {
         icon: faYoutube,
@@ -195,6 +196,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
+    colorScheme: "221, 184, 147",
     social_media: [
       {
         icon: faYoutube,
@@ -216,6 +218,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
+    colorScheme: "164, 184, 210",
     social_media: [
       {
         icon: faTwitch,
@@ -241,6 +244,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
+    colorScheme: "242, 165, 28",
     social_media: [
       {
         icon: faYoutube,
@@ -274,6 +278,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
+    colorScheme: "151, 114, 117",
     social_media: [
       {
         icon: faYoutube,
@@ -299,6 +304,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     affiliation: 'Independent',
+    colorScheme: "245, 166, 167",
     social_media: [
       {
         icon: faYoutube,
