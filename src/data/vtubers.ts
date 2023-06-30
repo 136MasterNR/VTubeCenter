@@ -8,7 +8,9 @@ import {
   faInstagram,
   faTiktok,
   faFacebook,
+  faIntercom,
 } from '@fortawesome/free-brands-svg-icons'
+import { faD, faTaxi, faTicket, faToggleOff, faY } from '@fortawesome/free-solid-svg-icons'
 
 type Social = {
   icon: IconProp
@@ -21,7 +23,7 @@ type VTuber = {
   username: string
   description: string
   language: string
-  affiliation: string
+  affiliation?: string
   affiliationURL?: string
   social_media: Social[]
   colorScheme?: string
@@ -195,7 +197,6 @@ const VTubers: VTuber[] = [
     username: 'feefch',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
     colorScheme: "221, 184, 147",
     social_media: [
       {
@@ -217,7 +218,6 @@ const VTubers: VTuber[] = [
     username: 'meikapuppy',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
     colorScheme: "164, 184, 210",
     social_media: [
       {
@@ -243,7 +243,6 @@ const VTubers: VTuber[] = [
     username: 'enocinoco',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
     colorScheme: "242, 165, 28",
     social_media: [
       {
@@ -273,37 +272,10 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Inukai Purin',
-    username: 'inukai_purin',
-    description: 'No description provided.',
-    language: 'English',
-    affiliation: 'Independent',
-    colorScheme: "151, 114, 117",
-    social_media: [
-      {
-        icon: faYoutube,
-        url: 'https://www.youtube.com/channel/UCdrQWcX7XLDSUEh9SAxnyBg',
-      },
-      {
-        icon: faTwitch,
-        url: 'https://www.twitch.tv/inukaipurin',
-      },
-      {
-        icon: faTwitter,
-        url: 'https://twitter.com/inukaipurin',
-      },
-      {
-        icon: faDiscord,
-        url: 'https://discord.com/invite/purinhub',
-      },
-    ],
-  },
-  {
     name: 'Kore',
     username: 'shibakore',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
     colorScheme: "245, 166, 167",
     social_media: [
       {
@@ -329,104 +301,349 @@ const VTubers: VTuber[] = [
     username: 'chibichinu',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '213, 190, 174',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/chibichinu',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/chibichinu',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/4SdW3sWXvB',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@chibichinu',
+      },
+    ],
   },
   {
-    name: 'Kyundere',
+    name: 'Kyun',
     username: 'kyundere',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '150, 117, 138',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCJ1nccH0r8tk_svSnBGOEew',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/kyundere',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/kyxndere',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/kyun',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/kyunndere/',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://tiktok.com/@kyunndere',
+      },
+    ],
   },
   {
     name: 'Inunaka Akari',
-    username: 'inunaka_akari',
+    username: 'inunakaakari',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '230, 185, 143',
+    featured: true,
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCYed1gfgN5qCwJfk3j_yr2Q',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/InunakaAkari',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.gg/pyCn4cMYMN',
+      },
+      {
+        icon: faFacebook,
+        url: 'https://www.facebook.com/InunakaAkariCh/',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@inunakaakari',
+      },
+    ],
   },
   {
     name: 'Sino Shinomiya',
-    username: 'sino_shinomiya',
+    username: 'sinosino141',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '226, 177, 167',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@sinosino141',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/sinosino141',
+      },
+    ],
   },
   {
     name: 'BuffPup',
     username: 'buffpup',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '157, 124, 202',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCM6Ld_dNSaUQ2uwjJ4Gq9FA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/buffpup',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Buffpup_',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/buffpupgym',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@buffpup_',
+      },
+    ],
   },
   {
     name: 'Cece',
-    username: 'cece',
+    username: 'cececorgi',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '225, 173, 225',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UC0RZjrtGt8kIxADWtxQAx0A',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/CeceCorgi',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Cece_Corgi',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/NhPRP23',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/cececorgi_vt',
+      },
+      {
+        icon: faFacebook,
+        url: 'https://www.facebook.com/CeceCorgi',
+      },
+    ],
   },
   {
     name: 'Cobalt Puppy',
-    username: 'cobalt_puppy',
+    username: 'cobaltpuppy',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '210, 111, 80',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UC7ra0B5rveLR20qgRUh8GEA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/cobaltpuppy',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/CobaltPuppy',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/ZmjCx8u',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@thecobaltpuppy',
+      },
+    ],
   },
   {
     name: 'Lunpai',
-    username: 'lunpai',
+    username: 'komarilunpai',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '239, 173, 122',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UC3Fv1aQfaYQwDqacAOf_VzA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/lunpai',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/komarilunpai',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/ZmjCx8u',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@lunpai',
+      },
+    ],
   },
   {
     name: 'Mai',
-    username: 'mai',
+    username: 'breadshiba',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '224, 185, 145',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCB3wmOGMIofOu6mOYDgWl_w',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/breadshiba',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/breadshiba',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/kqcz5w2',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@maipan_ch',
+      },
+    ],
   },
   {
     name: 'Tayto',
-    username: 'tayto',
+    username: 'puptayto',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '145, 178, 201',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCszC84Kg9HJekg-QsO20wAA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/puptayto',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/puptayto',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/puptayto',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/puptayto',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@puptayto',
+      },
+    ],
   },
   {
-    featured: true,
     name: 'Klaire Fluffle',
     username: 'klaire_fluffle',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    featured: true,
+    colorScheme: '251, 198, 148',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@Klaire_Fluffle',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://twitch.tv/Klaire_Fluffle',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Klaire_Fluffle',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/jaDZwxf9Hq',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@klaire_fluffle',
+      },
+    ],
   },
   {
     name: 'Mango',
-    username: 'mango',
+    username: 'pup_mango',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '244, 205, 100',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCZHGjAJJtnCku59DFpDkz3A',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/mango_puppy',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Pup_Mango',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/CFKYuhuCDV',
+      },
+    ],
   },
   {
     name: 'Kimicchi',
     username: 'kimicchi_ch',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
+    colorScheme: '211, 212, 219',
     social_media: [
       {
         icon: faYoutube,
@@ -438,7 +655,7 @@ const VTubers: VTuber[] = [
       },
       {
         icon: faTwitter,
-        url: 'https://doggirls.pages.dev/#warnModal',
+        url: 'https://twitter.com/kimicchi_ch',
       },
       {
         icon: faDiscord,
@@ -451,124 +668,396 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Nadeshiko Komae',
-    username: 'nadeshiko_komae',
+    name: 'Komae Kemo',
+    username: 'komae_kemo',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '222, 164, 206',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCM6Ld_dNSaUQ2uwjJ4Gq9FA',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/komae_kemo',
+      },
+    ],
   },
   {
     name: '小柴起司',
-    username: '小柴起司',
+    username: '%E5%B0%8F%E6%9F%B4%E8%B5%B7%E5%8F%B8',
     description: 'No description provided.',
     language: 'Chinese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '255, 197, 122',
+    social_media: [
+      {
+        icon: faBilibili,
+        url: 'https://space.bilibili.com/608721429',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Cheese7420',
+      },
+    ],
   },
   {
     name: 'Jiya',
-    username: 'jiya',
+    username: 'jiyabratvt',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '180, 190, 215',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/jiyabrat',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/jiyabratvt',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/6JhRxgjnQh',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://twitter.com/jiyabratvt',
+      },
+    ],
   },
   {
     name: 'Lynna',
     username: 'lynna_vt',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '251, 189, 190',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/LynnaVT',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/lynna_vt',
+      },
+    ],
   },
   {
     name: 'Nora Shitagai',
     username: 'norashitagai',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '108, 140, 251',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCQYy35PowPpc6ImRH1TQgcw',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/norashitagai',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@norashitagai',
+      },
+    ],
   },
   {
     name: 'Yuyu',
-    username: 'ywumaru',
+    username: 'brattyui',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '217, 178, 206',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/ywumaru',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/ywumaru',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/plushypile',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/ywumaru/',
+      },
+    ],
   },
   {
     name: 'Art',
     username: 'artstudebt',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '241, 203, 104',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCYDK1GZaHWzEvIFhHdNcjzA',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/artstudebt',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/artstudebt',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/updwvwvvE6',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@artstudebt',
+      },
+    ],
   },
   {
     name: 'Poyon',
     username: 'puppypoyon',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '210, 180, 148',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@puppypoyon',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/puppypoyon',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/PuppyPoyon',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/EYEJR4AuR2',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@poyunpurin',
+      },
+    ],
   },
   {
     name: 'Nene',
     username: '2dpupy',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '226, 192, 200',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/2dpup',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/2dpupy',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/AGfahpkVj8',
+      },
+    ],
   },
   {
     name: 'Kuromi Kate',
     username: 'kuromikate',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '242, 113, 170',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCD0YMMAhQXM_re_fdDVsKeA',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/kuromikate/',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@kuromikate_ttv',
+      },
+    ],
   },
   {
     name: 'AQtiee',
     username: 'aqtiee_ttv',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '231, 180, 202',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/aqtiee',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/AQtiee_TTV',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/RzAKJTaTSk',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@aqtiee_ttv',
+      },
+    ],
   },
   {
     name: 'Samwich',
     username: 'imasamwich',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '250, 123, 144',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/c/imasamwich/featured',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/imasamwich',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/imasamwich',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/sdMN6xufNe',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/imasamwich.art/',
+      },
+    ],
   },
   {
     name: 'Ribbon',
     username: 'ribbonfemale',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '220, 135, 85',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/c/ribbonfemale',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/ribbonfemale',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/ribbonfemale',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/gSdSz4vNrz',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/ribbonfemale',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@ribbonfemale',
+      },
+    ],
   },
   {
     name: 'PopRoxy',
     username: 'PopRoxy4',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '255, 145, 98',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@PopRoxy2000',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/poproxy2000',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/PopRoxy4',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/DehFHWfKW5',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@poproxy2000',
+      },
+    ],
   },
   {
     name: 'Miffy',
     username: 'miffygeist',
     description: 'No description provided.',
     language: 'English',
-    affiliation: 'Independent',
-    social_media: [],
+    colorScheme: '242, 138, 191',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCPy7MBpSwuuzwJb0B_Z9zAw',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/miffygeist',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/miffygeist',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/CEGJPCJe2p',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@miffygeist',
+      },
+    ],
+  },
+  {
+    name: 'Inukai Purin',
+    username: 'inukaipurin',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: "170, 132, 203",
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCdrQWcX7XLDSUEh9SAxnyBg',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/inukaipurin',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/inukaipurin',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/purinhub',
+      },
+    ],
   },
 ]
 

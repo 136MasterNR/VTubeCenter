@@ -24,7 +24,7 @@ main.list {
 
     &:hover {
       transform: translateY(-5px);
-      background-color: rgb(58, 56, 81)!important; // Cuz overriden by page.tsx
+      background-color: rgb(58, 56, 81) !important; // Cuz overriden by page.tsx
     }
 
     &:active {
@@ -42,7 +42,7 @@ main.list {
 
       img {
         display: flex;
-        margin: 7.5px;
+        margin: 7px;
         width: 435px;
         height: 110px;
 
@@ -59,8 +59,8 @@ main.list {
 
     .avatar {
       position: relative;
-      top: -55.25px;
-      right: -10.55px;
+      top: -55px;
+      right: -10.25px;
 
       width: fit-content;
 
@@ -75,20 +75,42 @@ main.list {
       }
     }
 
-    .language {
-      position: relative;
-      top: -102.5px;
-      right: -110px;
-      width: fit-content;
-      padding: 3px 10px 4px 10px;
-      border-radius: 5px;
+    .badges {
+      display: flex;
+      flex-direction: row;
+      
+      .language {
+        position: relative;
+        top: -102.5px;
+        right: -110px;
+        width: fit-content;
+        padding: 3px 10px 4px 10px;
+        border-radius: 5px;
 
-      background-color: #e17f00;
+        color: white;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0 2.5px 2.5px rgba(0 0 0 / 20%)
+      }
 
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: white;
+      .featured {
+        position: relative;
+        top: -102.5px;
+        right: -110px;
+        margin-left: 7.5px;
+
+        border-radius: 5px;
+
+        svg {
+          position: relative;
+          filter: drop-shadow(0 2.5px 0 rgba(0 0 0 / 20%))
+        }
+
+        .nextui-tooltip-button {
+          color: red;
+        }
+      }
     }
 
     .social_media {
@@ -114,7 +136,7 @@ main.list {
         transition: 0.25s scale;
 
         &:hover {
-          scale: 1.1;
+          scale: 1.15;
         }
       }
     }

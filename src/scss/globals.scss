@@ -22,6 +22,10 @@ body {
 
   background-color: white;
 
+  *::selection {
+    background-color: rgba(129, 125, 207, 0.55);
+  }
+
   .bg {
     position: fixed;
     top: 0;
