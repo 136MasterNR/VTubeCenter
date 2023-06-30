@@ -686,7 +686,7 @@ const VTubers: VTuber[] = [
   },
   {
     name: '小柴起司',
-    username: '%E5%B0%8F%E6%9F%B4%E8%B5%B7%E5%8F%B8',
+    username: 'cheese',
     description: 'No description provided.',
     language: 'Chinese',
     colorScheme: '255, 197, 122',
@@ -978,7 +978,7 @@ const VTubers: VTuber[] = [
   },
   {
     name: 'PopRoxy',
-    username: 'PopRoxy4',
+    username: 'poproxy4',
     description: 'No description provided.',
     language: 'English',
     colorScheme: '255, 145, 98',
