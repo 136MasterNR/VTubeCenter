@@ -46,11 +46,11 @@ export const VTuber = (props: IProps) => {
       }}
     >
       <div className="header">
-        <img src={`/img/header/${username}.webp`} alt={username} />
+        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" />
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username} />
+        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" />
       </div>
 
       <div

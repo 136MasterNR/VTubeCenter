@@ -34,7 +34,7 @@ const VTubers: VTuber[] = [
     description: 'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
     language: 'Japanese',
     affiliation: 'Hololive Gamers', affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
-    colorScheme: "223, 128, 0",
+    colorScheme: "239, 145, 10",
     social_media: [
       {
         icon: faYoutube,
