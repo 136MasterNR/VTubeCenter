@@ -31,6 +31,7 @@ interface IVtuberProps {
   affiliation: string
   affiliationURL?: string
   social_media: ISocial[]
+  colorScheme?: string
 }
 
 function CreateVtuber(props: IVtuberProps) {
@@ -39,14 +40,17 @@ function CreateVtuber(props: IVtuberProps) {
     username,
     description,
     language,
-    affiliation,
-    social_media,
+    affiliation = "Independent",
     affiliationURL,
+    social_media,
+    colorScheme = "45, 44, 63",
   } = props
 
   return (
-    <div className="vtuber">
-      <div className="banner">
+    <div className="vtuber" style={{
+      background: `linear-gradient(45deg, rgba(${colorScheme}, 0.15) 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`
+    }}>
+      <div className="header">
         <img
           src={`/img/header/${username}.webp`}
           alt={username}
@@ -60,7 +64,9 @@ function CreateVtuber(props: IVtuberProps) {
         />
       </div>
 
-      <div className="language">{language}</div>
+      <div className="language" style={{
+        backgroundColor: `rgba(${colorScheme}, 1)`
+      }}>{language}</div>
 
       <div className="social_media">
         {social_media.map((media, index) => (

@@ -24,6 +24,7 @@ type VTuber = {
   affiliation: string
   affiliationURL?: string
   social_media: Social[]
+  colorScheme?: string
 }
 
 const VTubers: VTuber[] = [
@@ -33,6 +34,7 @@ const VTubers: VTuber[] = [
     description: 'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
     language: 'Japanese',
     affiliation: 'Hololive Gamers', affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
+    colorScheme: "223, 128, 0",
     social_media: [
       {
         icon: faYoutube,
@@ -54,6 +56,7 @@ const VTubers: VTuber[] = [
     description: 'Yuniiho is very upbeat and excitable, though this may not show when she is focusing on her artwork. During her art streams, her attention often gets tugged between interacting with her chat and working on her commissions, occasionally leading to not much work getting done.',
     language: 'English',
     affiliation: 'Vyugen', affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
+    colorScheme: "242, 150, 181",
     social_media: [
       {
         icon: faYoutube,
@@ -87,6 +90,7 @@ const VTubers: VTuber[] = [
     description: 'Shiki has a tomboyish personality. She is a big fan of anything related to the occult and the unknown. She is also a masochist and likes to grieve.',
     language: 'English',
     affiliation: 'PRISM Project', affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
+    colorScheme: "234, 119, 96",
     social_media: [
       {
         icon: faYoutube,
@@ -108,6 +112,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'Japanese',
     affiliation: 'AniMare', affiliationURL: 'https://www.774.ai/talent/rui-seshima',
+    colorScheme: "225, 164, 133",
     social_media: [
       {
         icon: faYoutube,
@@ -125,6 +130,7 @@ const VTubers: VTuber[] = [
     description: 'Huni is your chaotic emotional support dog! She has been described as mostly hyper, chaotic, feral, and downright insane, and she loves destruction and murder far too much- but she is mostly a doggo with a heart of gold.',
     language: 'English',
     affiliation: 'Kawa Entertainment', affiliationURL: 'https://kawaentertainment.com/talent/hunikin',
+    colorScheme: "116, 178, 240",
     social_media: [
       {
         icon: faYoutube,
@@ -150,6 +156,7 @@ const VTubers: VTuber[] = [
     description: 'Pochi is lively, caring, and interactive. She reflects a growth mindset with her passion for gaming, showing an interest in various genres.',
     language: 'English',
     affiliation: 'idolEN', affiliationURL: 'https://idol-company.com/pochi/',
+    colorScheme: "222, 173, 124",
     social_media: [
       {
         icon: faYoutube,
