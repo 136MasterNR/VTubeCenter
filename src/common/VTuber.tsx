@@ -1,3 +1,8 @@
+"use client"
+
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import Icon from '../common/Icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -64,15 +69,15 @@ export const VTuber = (props: IProps) => {
         >
           {language}
         </div>
-          <div className="featured"
-            style={{
+        {featured ? (
+          <Tippy content={<>Featured</>} allowHTML={true}>
+            <div className="featured" style={{
               backgroundColor: `rgba(${colorScheme}, 1)`,
-            }}
-          >
-          {featured ? (
-            <FontAwesomeIcon icon={faStar} width={25} height={25} color='white' />
-          ) : null}
-          </div>
+            }}>
+              <FontAwesomeIcon icon={faStar} width={18} height={18} color='white' />
+            </div>
+          </Tippy>
+        ) : null}
       </div>
 
       <div className="social_media">

@@ -198,23 +198,57 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Feef',
-    username: 'feefch',
-    description: 'No description provided.',
+    name: 'Inunaka Akari',
+    username: 'inunakaakari',
+    description: 'A golden retriever adopted by a Japanese family who just moved into town. She is now learning Japanese to understand her new family. She loves food and games and whenever her family is busy, she sneaks in to use the computer to play games, create content, and stream.',
     language: 'English',
-    colorScheme: "221, 184, 147",
+    colorScheme: '230, 185, 143',
+    featured: true,
     social_media: [
       {
         icon: faYoutube,
-        url: 'https://www.youtube.com/channel/UCgcx0pQsUO9KF2bF-n9MgUQ',
-      },
-      {
-        icon: faTwitch,
-        url: 'https://www.twitch.tv/feefch',
+        url: 'https://www.youtube.com/channel/UCYed1gfgN5qCwJfk3j_yr2Q',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/FeefCh',
+        url: 'https://twitter.com/InunakaAkari',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.gg/pyCn4cMYMN',
+      },
+      {
+        icon: faFacebook,
+        url: 'https://www.facebook.com/InunakaAkariCh/',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@inunakaakari',
+      },
+    ],
+  },
+  {
+    name: 'Chibi',
+    username: 'chibichinu',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: '213, 190, 174',
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/chibichinu',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/chibichinu',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/4SdW3sWXvB',
+      },
+      {
+        icon: faTiktok,
+        url: 'https://www.tiktok.com/@chibichinu',
       },
     ],
   },
@@ -277,52 +311,53 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Kore',
-    username: 'shibakore',
+    name: 'Feef',
+    username: 'feefch',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "245, 166, 167",
+    colorScheme: "221, 184, 147",
     social_media: [
       {
         icon: faYoutube,
-        url: 'https://www.youtube.com/c/korech',
+        url: 'https://www.youtube.com/channel/UCgcx0pQsUO9KF2bF-n9MgUQ',
       },
       {
         icon: faTwitch,
-        url: 'https://www.twitch.tv/shibakore',
+        url: 'https://www.twitch.tv/feefch',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/ShibaKore',
-      },
-      {
-        icon: faDiscord,
-        url: 'https://discord.com/invite/QPdhMAPEHK',
+        url: 'https://twitter.com/FeefCh',
       },
     ],
   },
   {
-    name: 'Chibi',
-    username: 'chibichinu',
+    name: 'Klaire Fluffle',
+    username: 'klaire_fluffle',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '213, 190, 174',
+    featured: true,
+    colorScheme: '251, 198, 148',
     social_media: [
       {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@Klaire_Fluffle',
+      },
+      {
         icon: faTwitch,
-        url: 'https://www.twitch.tv/chibichinu',
+        url: 'https://twitch.tv/Klaire_Fluffle',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/chibichinu',
+        url: 'https://twitter.com/Klaire_Fluffle',
       },
       {
         icon: faDiscord,
-        url: 'https://discord.com/invite/4SdW3sWXvB',
+        url: 'https://discord.com/invite/jaDZwxf9Hq',
       },
       {
         icon: faTiktok,
-        url: 'https://www.tiktok.com/@chibichinu',
+        url: 'https://www.tiktok.com/@klaire_fluffle',
       },
     ],
   },
@@ -360,36 +395,6 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Inunaka Akari',
-    username: 'inunakaakari',
-    description: 'A golden retriever adopted by a Japanese family who just moved into town. She is now learning Japanese to understand her new family. She loves food and games and whenever her family is busy, she sneaks in to use the computer to play games, create content, and stream.',
-    language: 'English',
-    colorScheme: '230, 185, 143',
-    featured: true,
-    social_media: [
-      {
-        icon: faYoutube,
-        url: 'https://www.youtube.com/channel/UCYed1gfgN5qCwJfk3j_yr2Q',
-      },
-      {
-        icon: faTwitter,
-        url: 'https://twitter.com/InunakaAkari',
-      },
-      {
-        icon: faDiscord,
-        url: 'https://discord.gg/pyCn4cMYMN',
-      },
-      {
-        icon: faFacebook,
-        url: 'https://www.facebook.com/InunakaAkariCh/',
-      },
-      {
-        icon: faTiktok,
-        url: 'https://www.tiktok.com/@inunakaakari',
-      },
-    ],
-  },
-  {
     name: 'Sino Shinomiya',
     username: 'sinosino141',
     description: 'No description provided.',
@@ -407,31 +412,27 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'BuffPup',
-    username: 'buffpup',
+    name: 'Kore',
+    username: 'shibakore',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '157, 124, 202',
+    colorScheme: "245, 166, 167",
     social_media: [
       {
         icon: faYoutube,
-        url: 'https://www.youtube.com/channel/UCM6Ld_dNSaUQ2uwjJ4Gq9FA',
+        url: 'https://www.youtube.com/c/korech',
       },
       {
         icon: faTwitch,
-        url: 'https://www.twitch.tv/buffpup',
+        url: 'https://www.twitch.tv/shibakore',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/Buffpup_',
+        url: 'https://twitter.com/ShibaKore',
       },
       {
         icon: faDiscord,
-        url: 'https://discord.com/invite/buffpupgym',
-      },
-      {
-        icon: faTiktok,
-        url: 'https://www.tiktok.com/@buffpup_',
+        url: 'https://discord.com/invite/QPdhMAPEHK',
       },
     ],
   },
@@ -589,32 +590,31 @@ const VTubers: VTuber[] = [
     ],
   },
   {
-    name: 'Klaire Fluffle',
-    username: 'klaire_fluffle',
+    name: 'BuffPup',
+    username: 'buffpup',
     description: 'No description provided.',
     language: 'English',
-    featured: true,
-    colorScheme: '251, 198, 148',
+    colorScheme: '157, 124, 202',
     social_media: [
       {
         icon: faYoutube,
-        url: 'https://www.youtube.com/@Klaire_Fluffle',
+        url: 'https://www.youtube.com/channel/UCM6Ld_dNSaUQ2uwjJ4Gq9FA',
       },
       {
         icon: faTwitch,
-        url: 'https://twitch.tv/Klaire_Fluffle',
+        url: 'https://www.twitch.tv/buffpup',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/Klaire_Fluffle',
+        url: 'https://twitter.com/Buffpup_',
       },
       {
         icon: faDiscord,
-        url: 'https://discord.com/invite/jaDZwxf9Hq',
+        url: 'https://discord.com/invite/buffpupgym',
       },
       {
         icon: faTiktok,
-        url: 'https://www.tiktok.com/@klaire_fluffle',
+        url: 'https://www.tiktok.com/@buffpup_',
       },
     ],
   },
