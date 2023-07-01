@@ -1,8 +1,4 @@
-"use client"
-
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import { Tooltip, red } from "@nextui-org/react";
-
 import Icon from '../common/Icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -28,8 +24,8 @@ interface IProps {
   language: string
   affiliation?: string
   affiliationURL?: string
-  featured?: boolean
   colorScheme?: string
+  featured?: boolean
   social_media: ISocial[]
 }
 
@@ -53,11 +49,11 @@ export const VTuber = (props: IProps) => {
       }}
     >
       <div className="header">
-        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" />
+        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" draggable="false" />
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" />
+        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" draggable="false" />
       </div>
 
       <div className="badges">
@@ -73,19 +69,9 @@ export const VTuber = (props: IProps) => {
               backgroundColor: `rgba(${colorScheme}, 1)`,
             }}
           >
-            <Tooltip content={"Featured"}
-                animated={true}
-                hideArrow={false}
-                trigger="hover"
-                color={'invert'}
-                placement="top"
-            >
-              {featured ? (
-                <>
-                  <FontAwesomeIcon icon={faStar} width={25} height={25} color='white' />
-                </>
-              ) : null}
-            </Tooltip>
+          {featured ? (
+            <FontAwesomeIcon icon={faStar} width={25} height={25} color='white' />
+          ) : null}
           </div>
       </div>
 
@@ -100,7 +86,7 @@ export const VTuber = (props: IProps) => {
       <div className={`affiliation ${fontJP.className}`}>
         {affiliation !== 'Independent' ? (
           <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faBuildingUser} width={24} height={24} />
+            <FontAwesomeIcon icon={faBuildingUser} width={19} height={19} />
             {affiliation}
           </a>
         ) : null}

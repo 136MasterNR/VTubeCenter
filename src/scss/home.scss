@@ -175,6 +175,11 @@ main.list {
         &:hover {
           color: #bdccdd;
         }
+
+        svg {
+          margin-right: 3px;
+          margin-left: 2px;
+        }
       }
     }
 
@@ -188,6 +193,7 @@ main.list {
 
       padding-right: 10px;
 
+      white-space: pre-line;
       line-height: 21.1px;
       color: #dedede;
       text-align: start;

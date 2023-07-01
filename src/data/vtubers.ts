@@ -8,9 +8,7 @@ import {
   faInstagram,
   faTiktok,
   faFacebook,
-  faIntercom,
 } from '@fortawesome/free-brands-svg-icons'
-import { faD, faTaxi, faTicket, faToggleOff, faY } from '@fortawesome/free-solid-svg-icons'
 
 type Social = {
   icon: IconProp
@@ -18,15 +16,15 @@ type Social = {
 }
 
 type VTuber = {
-  featured?: boolean
   name: string
   username: string
   description: string
   language: string
   affiliation?: string
   affiliationURL?: string
-  social_media: Social[]
   colorScheme?: string
+  featured?: boolean
+  social_media: Social[]
 }
 
 const VTubers: VTuber[] = [
@@ -35,7 +33,8 @@ const VTubers: VTuber[] = [
     username: 'inugami_korone',
     description: 'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
     language: 'Japanese',
-    affiliation: 'Hololive Gamers', affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
+    affiliation: 'Hololive Gamers',
+    affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
     colorScheme: "239, 145, 10",
     social_media: [
       {
@@ -57,7 +56,8 @@ const VTubers: VTuber[] = [
     username: 'yuniiho',
     description: 'Yuniiho is very upbeat and excitable, though this may not show when she is focusing on her artwork. During her art streams, her attention often gets tugged between interacting with her chat and working on her commissions, occasionally leading to not much work getting done.',
     language: 'English',
-    affiliation: 'Vyugen', affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
+    affiliation: 'Vyugen',
+    affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
     colorScheme: "242, 150, 181",
     social_media: [
       {
@@ -91,7 +91,8 @@ const VTubers: VTuber[] = [
     username: 'shiki_miyoshino',
     description: 'Shiki has a tomboyish personality. She is a big fan of anything related to the occult and the unknown. She is also a masochist and likes to grieve.',
     language: 'English',
-    affiliation: 'PRISM Project', affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
+    affiliation: 'PRISM Project',
+    affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
     colorScheme: "234, 119, 96",
     social_media: [
       {
@@ -113,7 +114,8 @@ const VTubers: VTuber[] = [
     username: 'rui_seshima',
     description: 'No description provided.',
     language: 'Japanese',
-    affiliation: 'AniMare', affiliationURL: 'https://www.774.ai/talent/rui-seshima',
+    affiliation: 'AniMare',
+    affiliationURL: 'https://www.774.ai/talent/rui-seshima',
     colorScheme: "225, 164, 133",
     social_media: [
       {
@@ -131,7 +133,8 @@ const VTubers: VTuber[] = [
     username: 'hunikinn',
     description: 'Huni is your chaotic emotional support dog! She has been described as mostly hyper, chaotic, feral, and downright insane, and she loves destruction and murder far too much- but she is mostly a doggo with a heart of gold.',
     language: 'English',
-    affiliation: 'Kawa Entertainment', affiliationURL: 'https://kawaentertainment.com/talent/hunikin',
+    affiliation: 'Kawa Entertainment',
+    affiliationURL: 'https://kawaentertainment.com/talent/hunikin',
     colorScheme: "116, 178, 240",
     social_media: [
       {
@@ -157,7 +160,8 @@ const VTubers: VTuber[] = [
     username: 'pochi_wanmaru',
     description: 'Pochi is lively, caring, and interactive. She reflects a growth mindset with her passion for gaming, showing an interest in various genres.',
     language: 'English',
-    affiliation: 'idolEN', affiliationURL: 'https://idol-company.com/pochi/',
+    affiliation: 'idolEN',
+    affiliationURL: 'https://idol-company.com/pochi/',
     colorScheme: "222, 173, 124",
     social_media: [
       {
@@ -177,9 +181,10 @@ const VTubers: VTuber[] = [
   {
     name: 'Inui Toko',
     username: 'inui_toko',
-    description: 'No description provided.',
+    description: 'Toko talks in a mashed up Kansai dialect and calls other livers with -han honorific. She has a laid back and free personality. Her witty comeback is especially prominent when replying to Marshmallows from her viewers, both on her Twitter and streams. She is well known for having a beautiful singing voice, and so she has the most viewed music video in NIJISANJI.',
     language: 'Japanese',
-    affiliation: 'Nijisanji', affiliationURL: 'https://www.nijisanji.jp/en/talents/l/toko-inui',
+    affiliation: 'Nijisanji',
+    affiliationURL: 'https://www.nijisanji.jp/en/talents/l/toko-inui',
     colorScheme: "178, 93, 54",
     social_media: [
       {
@@ -357,7 +362,7 @@ const VTubers: VTuber[] = [
   {
     name: 'Inunaka Akari',
     username: 'inunakaakari',
-    description: 'No description provided.',
+    description: 'A golden retriever adopted by a Japanese family who just moved into town. She is now learning Japanese to understand her new family. She loves food and games and whenever her family is busy, she sneaks in to use the computer to play games, create content, and stream.',
     language: 'English',
     colorScheme: '230, 185, 143',
     featured: true,
