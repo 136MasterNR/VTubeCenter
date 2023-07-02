@@ -74,7 +74,7 @@ export const VTuber = (props: IProps) => {
             <div className="featured" style={{
               backgroundColor: `rgba(${colorScheme}, 1)`,
             }}>
-              <FontAwesomeIcon icon={faStar} width={18} height={18} color='white' />
+              <FontAwesomeIcon icon={faStar} width={19} height={19} color='white' />
             </div>
           </Tippy>
         ) : null}

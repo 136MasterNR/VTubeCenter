@@ -111,7 +111,7 @@ main.list {
         display: flex;
         position: relative;
         top: -102.5px;
-        right: -110px;
+        right: -109.95px;
         margin-left: 7.5px;
         justify-content: center;
         align-items: center;
@@ -122,8 +122,10 @@ main.list {
         border-radius: 5px;
 
         svg {
-          position: relative;
-          top: -1.5px;
+          margin-bottom: 2px;
+
+          width: 19px;
+          height: 19px;
 
           filter: drop-shadow(0 2.5px 0 rgba(0 0 0 / 20%))
         }
@@ -220,6 +222,10 @@ main.list {
 
       scrollbar-color: lightgray rgba($color: #ffffff, $alpha: 0.1);
       scrollbar-width: thin;
+    }
+
+    ::-webkit-scrollbar {
+      cursor: pointer;
     }
 
     ::-webkit-scrollbar-thumb {
