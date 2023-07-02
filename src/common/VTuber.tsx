@@ -4,7 +4,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import Icon from '../common/Icon'
+import { Icon } from './Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBuildingUser,

@@ -16,5 +16,3 @@ export const Icon = ({ icon, remote, size }: Props) => {
     </Link>
   )
 }
-
-export default Icon
