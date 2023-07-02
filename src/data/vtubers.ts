@@ -35,7 +35,7 @@ const VTubers: VTuber[] = [
     language: 'Japanese',
     affiliation: 'Hololive Gamers',
     affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
-    colorScheme: "239, 145, 10",
+    colorScheme: "244, 170, 72",
     social_media: [
       {
         icon: faYoutube,
@@ -93,7 +93,7 @@ const VTubers: VTuber[] = [
     language: 'English',
     affiliation: 'PRISM Project',
     affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
-    colorScheme: "234, 119, 96",
+    colorScheme: "235, 120, 97",
     social_media: [
       {
         icon: faYoutube,
@@ -116,7 +116,7 @@ const VTubers: VTuber[] = [
     language: 'Japanese',
     affiliation: 'AniMare',
     affiliationURL: 'https://www.774.ai/talent/rui-seshima',
-    colorScheme: "225, 164, 133",
+    colorScheme: "250, 115, 100",
     social_media: [
       {
         icon: faYoutube,
