@@ -25,9 +25,8 @@ export default function Home() {
       <Header queryFilter={queryFilter} />
       <main className="list">
         {filteredVTubers.map((vtuber) => (
-          <AnimatePresence mode="wait">
+          <AnimatePresence key={vtuber.username} mode="wait">
             <motion.div
-              key={vtuber.username}
               initial="initialState"
               animate="animateState"
               exit="exitState"
