@@ -28,12 +28,19 @@ export const Header = (props: HeaderProps) => {
   return (
     <div>
       <header>
-        <div className="title">
-          <img src="/favicon.ico" width={36} height={36} />
-          <p>/ {directory}</p>
+        <div className='bg'></div>
+        <div className='items'>
+          <div className='left'>
+            <img src="/favicon.ico" width={36} height={36} />
+            <p>/ {directory}</p>
+          </div>
+          <div className='middle'>
+            <Search queryFilter={props.queryFilter}/>
+          </div>
+          <div className='right'>
+            <div className='img'></div>
+          </div>
         </div>
-        <Search queryFilter={props.queryFilter} />
-        {props.children}
       </header>
     </div>
   )
