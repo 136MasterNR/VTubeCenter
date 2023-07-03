@@ -1,6 +1,6 @@
 'use client'
 
-import '@/scss/home.scss'
+import '@/scss/vtubers.scss'
 
 import { AnimatePresence, motion } from 'framer-motion'
 

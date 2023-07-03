@@ -36,19 +36,4 @@ body {
     z-index: -9;
     background-color: rgb(25, 25, 25);
   }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h1.title {
-      margin: 0 auto;
-      text-align: center;
-
-      padding-bottom: 15px;
-      padding-top: 12.5px;
-      color: white;
-    }
-  }
 }

@@ -1,5 +1,7 @@
 "use client"
 
+import '../scss/header.scss'
+
 import { useEffect, useState } from 'react';
 
 interface HeaderProps {
@@ -11,7 +13,7 @@ function getPath() {
 
   useEffect(() => {
     let newDir: any = window.location.pathname.split('/').pop();
-    newDir ? (setDir(newDir)) : (setDir("Home"));
+    newDir ? (setDir(newDir)) : (setDir("doggirls"));
   }, []);
 
   return Dir;
@@ -19,13 +21,16 @@ function getPath() {
 
 export const Header = (props: HeaderProps) => {
   const {
-    directory=getPath()
+    directory = getPath()
   } = props
 
   return (
     <div>
       <header>
-        <h1 className="title">{directory}</h1>
+        <div className="title">
+          <img src="/favicon.ico" width={36} height={36}/>
+          <p>/ {directory}</p>
+        </div>
       </header>
     </div>
   )
