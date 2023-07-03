@@ -1,6 +1,6 @@
 import '../scss/globals.scss'
-import { Plus_Jakarta_Sans } from 'next/font/google'
 
+import { Plus_Jakarta_Sans } from 'next/font/google'
 const fontPrimary = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata = {

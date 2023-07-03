@@ -853,6 +853,23 @@ const VTubers: VTuber[] = [
     ],
   },
   {
+    name: 'Nanoha',
+    username: 'nano_song708',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: '214, 199, 225',
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://youtube.com/channel/UCRY0lbY0pNJLYGvf_pA7FHw',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Nano_song708',
+      },
+    ],
+  },
+  {
     name: 'Nene',
     username: '2dpupy',
     description: 'No description provided.',
