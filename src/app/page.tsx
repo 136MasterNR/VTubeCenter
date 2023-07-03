@@ -14,7 +14,7 @@ export default function Home() {
 
   const queryFilter = (query: string) => {
     const filtered = VTubers.filter((vtuber) =>
-      vtuber.username.toLowerCase().includes(query.toLowerCase())
+      vtuber.name.toLowerCase().includes(query.toLowerCase())
     )
 
     setFilteredVTubers(filtered)
