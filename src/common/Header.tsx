@@ -2,10 +2,11 @@
 
 import '../scss/header.scss'
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface HeaderProps {
-  directory?: any
+  directory?: any,
+  children?: React.ReactNode
 }
 
 function getPath() {
@@ -31,6 +32,7 @@ export const Header = (props: HeaderProps) => {
           <img src="/favicon.ico" width={36} height={36}/>
           <p>/ {directory}</p>
         </div>
+        {props.children}
       </header>
     </div>
   )

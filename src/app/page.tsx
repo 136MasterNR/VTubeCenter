@@ -22,8 +22,9 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
+      <Header>
       <Search queryFilter={queryFilter} />
+      </Header>
 
       <main className="list">
         {filteredVTubers.map((vtuber) => (
@@ -36,7 +37,7 @@ export default function Home() {
               variants={{
                 initialState: {
                   opacity: 0,
-                  translateY: -20,
+                  translateY: -25,
                 },
                 animateState: {
                   opacity: 1,
@@ -44,11 +45,11 @@ export default function Home() {
                 },
                 exitState: {
                   opacity: 0,
-                  translateY: 20,
+                  translateY: 25,
                 },
               }}
               transition={{
-                duration: 0.15,
+                duration: 0.1,
               }}
             >
               <VTuber key={vtuber.username} {...vtuber} />
