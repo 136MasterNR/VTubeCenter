@@ -22,10 +22,7 @@ export default function Home() {
 
   return (
     <div>
-      <Header>
-      <Search queryFilter={queryFilter} />
-      </Header>
-
+      <Header queryFilter={queryFilter} />
       <main className="list">
         {filteredVTubers.map((vtuber) => (
           <AnimatePresence mode="wait">
