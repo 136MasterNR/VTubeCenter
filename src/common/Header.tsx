@@ -34,9 +34,11 @@ export const Header = (props: IProps) => {
             <p>/ {directory}</p>
           </div>
           <div className="searchbar-content">
-            <Search queryFilter={queryFilter} category={directory}/>
-            <div className='hashtags'>
-              #{directory}
+            <div className="searchbar">
+              <Search queryFilter={queryFilter} category={directory}/>
+              <div className="hashtags">
+                #{directory}
+              </div>
             </div>
             <div className="searchbar-foreground"></div>
           </div>

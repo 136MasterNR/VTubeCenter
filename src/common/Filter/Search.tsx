@@ -23,7 +23,7 @@ export function Search({ category, queryFilter }: Props) {
   }
 
   return (
-    <>
+    <div>
       <input
         type="text"
         placeholder={'Search in #' + category}
@@ -37,6 +37,6 @@ export function Search({ category, queryFilter }: Props) {
       <button onClick={handleSearch}>
         <FontAwesomeIcon icon={faSearch} width={20} height={20} />
       </button>
-    </>
+    </div>
   )
 }
