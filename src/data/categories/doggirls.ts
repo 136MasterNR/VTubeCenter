@@ -1,4 +1,7 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { IVTuber } from './types'
+
+import { rgb } from 'polished'
+
 import {
   faYoutube,
   faTwitch,
@@ -10,32 +13,16 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons'
 
-type Social = {
-  icon: IconProp
-  url: string
-}
-
-type VTuber = {
-  name: string
-  username: string
-  description: string
-  language: string
-  affiliation?: string
-  affiliationURL?: string
-  colorScheme?: string
-  featured?: boolean
-  social_media: Social[]
-}
-
-const VTubers: VTuber[] = [
+export const Doggirls: IVTuber[] = [
   {
     name: 'Inugami Korone',
     username: 'inugami_korone',
-    description: 'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
+    description:
+      'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
     language: 'Japanese',
     affiliation: 'Hololive Gamers',
     affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
-    colorScheme: "244, 170, 72",
+    colorScheme: rgb(255, 170, 72),
     social_media: [
       {
         icon: faYoutube,
@@ -54,11 +41,12 @@ const VTubers: VTuber[] = [
   {
     name: 'Yuniiho',
     username: 'yuniiho',
-    description: 'Yuniiho is very upbeat and excitable, though this may not show when she is focusing on her artwork. During her art streams, her attention often gets tugged between interacting with her chat and working on her commissions, occasionally leading to not much work getting done.',
+    description:
+      'Yuniiho is very upbeat and excitable, though this may not show when she is focusing on her artwork. During her art streams, her attention often gets tugged between interacting with her chat and working on her commissions, occasionally leading to not much work getting done.',
     language: 'English',
     affiliation: 'Vyugen',
     affiliationURL: 'https://mobile.twitter.com/vyugenofficial',
-    colorScheme: "242, 150, 181",
+    colorScheme: rgb(242, 150, 181),
     social_media: [
       {
         icon: faYoutube,
@@ -89,11 +77,13 @@ const VTubers: VTuber[] = [
   {
     name: 'Shiki Miyoshino',
     username: 'shiki_miyoshino',
-    description: 'Shiki has a tomboyish personality. She is a big fan of anything related to the occult and the unknown. She is also a masochist and likes to grieve.',
+    description:
+      'Shiki has a tomboyish personality. She is a big fan of anything related to the occult and the unknown. She is also a masochist and likes to grieve.',
     language: 'English',
     affiliation: 'PRISM Project',
-    affiliationURL: 'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
-    colorScheme: "235, 120, 97",
+    affiliationURL:
+      'https://www.prismproject.jp/#section-f_70da0459-0e7a-4af3-b0a1-aee809afdfc8',
+    colorScheme: rgb(235, 120, 97),
     social_media: [
       {
         icon: faYoutube,
@@ -116,7 +106,7 @@ const VTubers: VTuber[] = [
     language: 'Japanese',
     affiliation: 'AniMare',
     affiliationURL: 'https://www.774.ai/talent/rui-seshima',
-    colorScheme: "250, 115, 100",
+    colorScheme: rgb(250, 115, 100),
     social_media: [
       {
         icon: faYoutube,
@@ -131,11 +121,12 @@ const VTubers: VTuber[] = [
   {
     name: 'Hunikin',
     username: 'hunikinn',
-    description: 'Huni is your chaotic emotional support dog! She has been described as mostly hyper, chaotic, feral, and downright insane, and she loves destruction and murder far too much- but she is mostly a doggo with a heart of gold.',
+    description:
+      'Huni is your chaotic emotional support dog! She has been described as mostly hyper, chaotic, feral, and downright insane, and she loves destruction and murder far too much- but she is mostly a doggo with a heart of gold.',
     language: 'English',
     affiliation: 'Kawa Entertainment',
     affiliationURL: 'https://kawaentertainment.com/talent/hunikin',
-    colorScheme: "116, 178, 240",
+    colorScheme: rgb(116, 178, 240),
     social_media: [
       {
         icon: faYoutube,
@@ -158,11 +149,12 @@ const VTubers: VTuber[] = [
   {
     name: 'Pochi Wanmaru',
     username: 'pochi_wanmaru',
-    description: 'Pochi is lively, caring, and interactive. She reflects a growth mindset with her passion for gaming, showing an interest in various genres.',
+    description:
+      'Pochi is lively, caring, and interactive. She reflects a growth mindset with her passion for gaming, showing an interest in various genres.',
     language: 'English',
     affiliation: 'idolEN',
     affiliationURL: 'https://idol-company.com/pochi/',
-    colorScheme: "222, 173, 124",
+    colorScheme: rgb(222, 173, 124),
     social_media: [
       {
         icon: faYoutube,
@@ -181,11 +173,12 @@ const VTubers: VTuber[] = [
   {
     name: 'Inui Toko',
     username: 'inui_toko',
-    description: 'Toko talks in a mashed up Kansai dialect and calls other livers with -han honorific. She has a laid back and free personality. Her witty comeback is especially prominent when replying to Marshmallows from her viewers, both on her Twitter and streams. She is well known for having a beautiful singing voice, and so she has the most viewed music video in NIJISANJI.',
+    description:
+      'Toko talks in a mashed up Kansai dialect and calls other livers with -han honorific. She has a laid back and free personality. Her witty comeback is especially prominent when replying to Marshmallows from her viewers, both on her Twitter and streams. She is well known for having a beautiful singing voice, and so she has the most viewed music video in NIJISANJI.',
     language: 'Japanese',
     affiliation: 'Nijisanji',
     affiliationURL: 'https://www.nijisanji.jp/en/talents/l/toko-inui',
-    colorScheme: "178, 93, 54",
+    colorScheme: rgb(178, 93, 54),
     social_media: [
       {
         icon: faYoutube,
@@ -200,9 +193,10 @@ const VTubers: VTuber[] = [
   {
     name: 'Inunaka Akari',
     username: 'inunakaakari',
-    description: 'A golden retriever adopted by a Japanese family who just moved into town. She is now learning Japanese to understand her new family. She loves food and games and whenever her family is busy, she sneaks in to use the computer to play games, create content, and stream.',
+    description:
+      'A golden retriever adopted by a Japanese family who just moved into town. She is now learning Japanese to understand her new family. She loves food and games and whenever her family is busy, she sneaks in to use the computer to play games, create content, and stream.',
     language: 'English',
-    colorScheme: '230, 185, 143',
+    colorScheme: rgb(230, 185, 143),
     featured: true,
     social_media: [
       {
@@ -232,7 +226,7 @@ const VTubers: VTuber[] = [
     username: 'chibichinu',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '213, 190, 174',
+    colorScheme: rgb(213, 190, 174),
     social_media: [
       {
         icon: faTwitch,
@@ -257,7 +251,7 @@ const VTubers: VTuber[] = [
     username: 'meikapuppy',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "164, 184, 210",
+    colorScheme: rgb(164, 184, 210),
     social_media: [
       {
         icon: faTwitch,
@@ -282,7 +276,7 @@ const VTubers: VTuber[] = [
     username: 'enocinoco',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "242, 165, 28",
+    colorScheme: rgb(242, 165, 28),
     social_media: [
       {
         icon: faYoutube,
@@ -315,7 +309,7 @@ const VTubers: VTuber[] = [
     username: 'feefch',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "221, 184, 147",
+    colorScheme: rgb(221, 184, 147),
     social_media: [
       {
         icon: faYoutube,
@@ -337,7 +331,7 @@ const VTubers: VTuber[] = [
     description: 'No description provided.',
     language: 'English',
     featured: true,
-    colorScheme: '251, 198, 148',
+    colorScheme: rgb(251, 198, 148),
     social_media: [
       {
         icon: faYoutube,
@@ -366,7 +360,7 @@ const VTubers: VTuber[] = [
     username: 'kyundere',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '150, 117, 138',
+    colorScheme: rgb(150, 117, 138),
     social_media: [
       {
         icon: faYoutube,
@@ -399,7 +393,7 @@ const VTubers: VTuber[] = [
     username: 'sinosino141',
     description: 'No description provided.',
     language: 'Japanese',
-    colorScheme: '226, 177, 167',
+    colorScheme: rgb(226, 177, 167),
     social_media: [
       {
         icon: faYoutube,
@@ -416,7 +410,7 @@ const VTubers: VTuber[] = [
     username: 'shibakore',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "245, 166, 167",
+    colorScheme: rgb(245, 166, 167),
     social_media: [
       {
         icon: faYoutube,
@@ -441,7 +435,7 @@ const VTubers: VTuber[] = [
     username: 'cececorgi',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '225, 173, 225',
+    colorScheme: rgb(225, 173, 225),
     social_media: [
       {
         icon: faYoutube,
@@ -474,7 +468,7 @@ const VTubers: VTuber[] = [
     username: 'cobaltpuppy',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '210, 111, 80',
+    colorScheme: rgb(210, 111, 80),
     social_media: [
       {
         icon: faYoutube,
@@ -503,7 +497,7 @@ const VTubers: VTuber[] = [
     username: 'komarilunpai',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '239, 173, 122',
+    colorScheme: rgb(239, 173, 122),
     social_media: [
       {
         icon: faYoutube,
@@ -532,7 +526,7 @@ const VTubers: VTuber[] = [
     username: 'breadshiba',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '224, 185, 145',
+    colorScheme: rgb(224, 185, 145),
     social_media: [
       {
         icon: faYoutube,
@@ -561,7 +555,7 @@ const VTubers: VTuber[] = [
     username: 'puptayto',
     description: 'No description provided.',
     language: 'Japanese',
-    colorScheme: '145, 178, 201',
+    colorScheme: rgb(145, 178, 201),
     social_media: [
       {
         icon: faYoutube,
@@ -594,7 +588,7 @@ const VTubers: VTuber[] = [
     username: 'buffpup',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '157, 124, 202',
+    colorScheme: rgb(157, 124, 202),
     social_media: [
       {
         icon: faYoutube,
@@ -623,7 +617,7 @@ const VTubers: VTuber[] = [
     username: 'pup_mango',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '244, 205, 100',
+    colorScheme: rgb(244, 205, 100),
     social_media: [
       {
         icon: faYoutube,
@@ -648,7 +642,7 @@ const VTubers: VTuber[] = [
     username: 'kimicchi_ch',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '211, 212, 219',
+    colorScheme: rgb(211, 212, 219),
     social_media: [
       {
         icon: faYoutube,
@@ -677,7 +671,7 @@ const VTubers: VTuber[] = [
     username: 'komae_kemo',
     description: 'No description provided.',
     language: 'Japanese',
-    colorScheme: '222, 164, 206',
+    colorScheme: rgb(222, 164, 206),
     social_media: [
       {
         icon: faYoutube,
@@ -694,7 +688,7 @@ const VTubers: VTuber[] = [
     username: 'cheese',
     description: 'No description provided.',
     language: 'Chinese',
-    colorScheme: '255, 197, 122',
+    colorScheme: rgb(255, 197, 122),
     social_media: [
       {
         icon: faBilibili,
@@ -711,7 +705,7 @@ const VTubers: VTuber[] = [
     username: 'jiyabratvt',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '180, 190, 215',
+    colorScheme: rgb(180, 190, 215),
     social_media: [
       {
         icon: faTwitch,
@@ -736,7 +730,7 @@ const VTubers: VTuber[] = [
     username: 'lynna_vt',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '251, 189, 190',
+    colorScheme: rgb(251, 189, 190),
     social_media: [
       {
         icon: faTwitch,
@@ -753,7 +747,7 @@ const VTubers: VTuber[] = [
     username: 'norashitagai',
     description: 'No description provided.',
     language: 'Japanese',
-    colorScheme: '108, 140, 251',
+    colorScheme: rgb(108, 140, 251),
     social_media: [
       {
         icon: faYoutube,
@@ -774,7 +768,7 @@ const VTubers: VTuber[] = [
     username: 'brattyui',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '217, 178, 206',
+    colorScheme: rgb(217, 178, 206),
     social_media: [
       {
         icon: faTwitch,
@@ -799,7 +793,7 @@ const VTubers: VTuber[] = [
     username: 'artstudebt',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '241, 203, 104',
+    colorScheme: rgb(241, 203, 104),
     social_media: [
       {
         icon: faYoutube,
@@ -828,7 +822,7 @@ const VTubers: VTuber[] = [
     username: 'puppypoyon',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '210, 180, 148',
+    colorScheme: rgb(210, 180, 148),
     social_media: [
       {
         icon: faYoutube,
@@ -857,7 +851,7 @@ const VTubers: VTuber[] = [
     username: 'nano_song708',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '214, 199, 225',
+    colorScheme: rgb(214, 199, 225),
     social_media: [
       {
         icon: faYoutube,
@@ -874,7 +868,7 @@ const VTubers: VTuber[] = [
     username: '2dpupy',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '226, 192, 200',
+    colorScheme: rgb(226, 192, 200),
     social_media: [
       {
         icon: faTwitch,
@@ -895,7 +889,7 @@ const VTubers: VTuber[] = [
     username: 'kuromikate',
     description: 'No description provided.',
     language: 'Japanese',
-    colorScheme: '242, 113, 170',
+    colorScheme: rgb(242, 113, 170),
     social_media: [
       {
         icon: faYoutube,
@@ -916,7 +910,7 @@ const VTubers: VTuber[] = [
     username: 'aqtiee_ttv',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '231, 180, 202',
+    colorScheme: rgb(231, 180, 202),
     social_media: [
       {
         icon: faTwitch,
@@ -941,7 +935,7 @@ const VTubers: VTuber[] = [
     username: 'imasamwich',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '250, 123, 144',
+    colorScheme: rgb(250, 123, 144),
     social_media: [
       {
         icon: faYoutube,
@@ -970,7 +964,7 @@ const VTubers: VTuber[] = [
     username: 'ribbonfemale',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '220, 135, 85',
+    colorScheme: rgb(220, 135, 85),
     social_media: [
       {
         icon: faYoutube,
@@ -1003,7 +997,7 @@ const VTubers: VTuber[] = [
     username: 'poproxy4',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '255, 145, 98',
+    colorScheme: rgb(255, 145, 98),
     social_media: [
       {
         icon: faYoutube,
@@ -1032,7 +1026,7 @@ const VTubers: VTuber[] = [
     username: 'miffygeist',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: '242, 138, 191',
+    colorScheme: rgb(242, 138, 191),
     social_media: [
       {
         icon: faYoutube,
@@ -1061,7 +1055,7 @@ const VTubers: VTuber[] = [
     username: 'inukaipurin',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: "170, 132, 203",
+    colorScheme: rgb(170, 132, 203),
     social_media: [
       {
         icon: faYoutube,
@@ -1081,6 +1075,21 @@ const VTubers: VTuber[] = [
       },
     ],
   },
+  {
+    name: 'Ren Inu',
+    username: 'kawaiinuren',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: rgb(254, 173, 172),
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/kawaiinuren',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/kawaiinuren',
+      },
+    ],
+  },
 ]
-
-export default VTubers

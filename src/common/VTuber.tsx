@@ -50,7 +50,7 @@ export const VTuber = (props: IProps) => {
   return (
     <div className="vtuber"
       style={{
-        background: `linear-gradient(45deg, rgba(${colorScheme}, 0.2) 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`,
+        background: `linear-gradient(45deg, ${colorScheme}30 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`,
       }}
     >
       <div className="header">
@@ -64,7 +64,7 @@ export const VTuber = (props: IProps) => {
       <div className="badges">
         <div className="language"
           style={{
-            backgroundColor: `rgba(${colorScheme}, 1)`,
+            backgroundColor: `${colorScheme}`,
           }}
         >
           {language}
@@ -72,7 +72,7 @@ export const VTuber = (props: IProps) => {
         {featured ? (
           <Tippy content={<>Featured</>} allowHTML={true}>
             <div className="featured" style={{
-              backgroundColor: `rgba(${colorScheme}, 1)`,
+              backgroundColor: `${colorScheme}`,
             }}>
               <FontAwesomeIcon icon={faStar} width={19} height={19} color='white' />
             </div>

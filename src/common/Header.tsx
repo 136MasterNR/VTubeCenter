@@ -8,7 +8,7 @@ import { Search } from './Filter/Search'
 interface IProps {
   queryFilter: (query: string) => void
   directory?: any
-  children?: React.ReactNode
+  children?: React.ReactNode,
 }
 
 function getPath() {
@@ -34,7 +34,7 @@ export const Header = (props: IProps) => {
             <p>/ {directory}</p>
           </div>
           <div className="searchbar-content">
-            <Search queryFilter={queryFilter} />
+            <Search queryFilter={queryFilter} category={directory}/>
             <div className='hashtags'>
               #{directory}
             </div>

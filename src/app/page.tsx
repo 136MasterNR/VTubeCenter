@@ -1,58 +1,69 @@
-'use client'
+// 'use client'
 
-import '@/scss/vtubers.scss'
+import Link from "next/link";
 
-import { AnimatePresence, motion } from 'framer-motion'
+// import '@/scss/vtubers.scss'
 
-import React, { useState } from 'react'
-import VTubers from '@/data/vtubers'
+// import { AnimatePresence, motion } from 'framer-motion'
 
-import { Header, Search, VTuber } from '@/common'
+// import React, { useState } from 'react'
+// import { Doggirls } from '@/data/categories/doggirls'
 
-export default function Home() {
-  const [filteredVTubers, setFilteredVTubers] = useState(VTubers)
+// import { Header, Search, VTuber } from '@/common'
 
-  const queryFilter = (query: string) => {
-    const filtered = VTubers.filter((vtuber) =>
-      vtuber.name.toLowerCase().includes(query.toLowerCase())
+// export default function Home() {
+//   const [filteredVTubers, setFilteredVTubers] = useState(Doggirls)
+
+//   const queryFilter = (query: string) => {
+//     const filtered = Doggirls.filter((vtuber) =>
+//       vtuber.name.toLowerCase().includes(query.toLowerCase())
+//     )
+
+//     setFilteredVTubers(filtered)
+//   }
+
+//   return (
+//     <div>
+//       <Header queryFilter={queryFilter} />
+//       <main className="list">
+//         {filteredVTubers.map((vtuber) => (
+//           <AnimatePresence key={vtuber.username} mode="wait">
+//             <motion.div
+//               initial="initialState"
+//               animate="animateState"
+//               exit="exitState"
+//               variants={{
+//                 initialState: {
+//                   opacity: 0,
+//                   translateY: -25,
+//                 },
+//                 animateState: {
+//                   opacity: 1,
+//                   translateY: 0,
+//                 },
+//                 exitState: {
+//                   opacity: 0,
+//                   translateY: 25,
+//                 },
+//               }}
+//               transition={{
+//                 duration: 0.1,
+//               }}
+//             >
+//               <VTuber key={vtuber.username} {...vtuber} />
+//             </motion.div>
+//           </AnimatePresence>
+//         ))}
+//       </main>
+//     </div>
+//   )
+// }
+
+export default function Home() { 
+    return (
+      <div>
+       <h2>use <Link href="/c/doggirls">/c/doggirls</Link></h2>
+       <p>or if ur experimental hehe use <Link href="/c/test">/c/test</Link></p>
+      </div>
     )
-
-    setFilteredVTubers(filtered)
   }
-
-  return (
-    <div>
-      <Header queryFilter={queryFilter} />
-      <main className="list">
-        {filteredVTubers.map((vtuber) => (
-          <AnimatePresence key={vtuber.username} mode="wait">
-            <motion.div
-              initial="initialState"
-              animate="animateState"
-              exit="exitState"
-              variants={{
-                initialState: {
-                  opacity: 0,
-                  translateY: -25,
-                },
-                animateState: {
-                  opacity: 1,
-                  translateY: 0,
-                },
-                exitState: {
-                  opacity: 0,
-                  translateY: 25,
-                },
-              }}
-              transition={{
-                duration: 0.1,
-              }}
-            >
-              <VTuber key={vtuber.username} {...vtuber} />
-            </motion.div>
-          </AnimatePresence>
-        ))}
-      </main>
-    </div>
-  )
-}

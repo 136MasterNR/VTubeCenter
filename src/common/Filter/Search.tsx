@@ -1,40 +1,42 @@
 'use client'
 
-import React, { useState, ChangeEvent } from 'react';
-
+import React, { useState, KeyboardEvent } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faSearch,
-} from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
   queryFilter: (query: string) => void
+  category?: string
 }
 
-export function Search({ queryFilter }: Props) {
-  const [query, setQuery] = useState('');
+export function Search({ category, queryFilter }: Props) {
+  const [query, setQuery] = useState('')
 
-  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    const inputValue = e.target.value;
+  const handleSearch = () => {
+    queryFilter(query)
+  }
 
-    setQuery(inputValue);
-
-    queryFilter(inputValue);
-  };
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch()
+    }
+  }
 
   return (
     <>
       <input
         type="text"
-        placeholder={`Search in #doggirls`}
+        placeholder={'Search in #' + category}
         className="inner-searchbar"
         maxLength={24}
         autoFocus={true}
-        onChange={handleSearch}
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyPress={handleKeyPress}
       />
-      <button>
+      <button onClick={handleSearch}>
         <FontAwesomeIcon icon={faSearch} width={20} height={20} />
       </button>
     </>
-  );
+  )
 }
