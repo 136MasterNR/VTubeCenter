@@ -81,11 +81,14 @@ header {
     }
   }
 
-  .right div {
-    width: 150px;
-    height: 150px;
+  .right {
+    div {
+      width: 200px;
+      height: 100%;
 
-    // it's this one
-    background-image: url('/img/model/inugami_korone.webp');
+      background-image: url('/img/model/inugami_korone.webp');
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
