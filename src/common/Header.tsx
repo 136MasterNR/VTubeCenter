@@ -21,7 +21,10 @@ function getPath() {
 }
 
 export const Header = (props: IProps) => {
-  const { directory = getPath(), queryFilter } = props
+  const {
+    directory = getPath(),
+    queryFilter
+  } = props
 
   return (
     <div>
