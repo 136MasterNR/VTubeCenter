@@ -1,5 +1,3 @@
-'use client'
-
 import '../scss/header.scss'
 
 import React, { useEffect, useState } from 'react'
@@ -30,7 +28,9 @@ export const Header = (props: IProps) => {
       <header>
         <div className="header-content">
           <div className="header-branding">
-            <img src="/favicon.ico" width={36} height={36} />
+            <a href="/" rel="noopener noreferrer">
+              <img src="/favicon.ico" alt="logo" width={36} height={36} />
+            </a>
             <p>/ {directory}</p>
           </div>
           <div className="searchbar-content">

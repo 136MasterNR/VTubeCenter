@@ -3,6 +3,9 @@ import '../scss/globals.scss'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 const fontPrimary = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
+import React, {Suspense} from 'react'
+import Loading from './loading'
+
 export const metadata = {
   title: 'VTube Center',
   description: 'Get a list of every anime Virtual Doggirl in the world!',
@@ -47,10 +50,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={fontPrimary.className}>
-        {children}
-        <div className="bg"></div>
-      </body>
+      <Suspense fallback={<Loading/>}>
+        <body className={fontPrimary.className}>
+          {children}
+          <div className="bg"></div>
+        </body>
+      </Suspense>
     </html>
   )
 }

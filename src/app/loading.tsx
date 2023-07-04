@@ -1,0 +1,36 @@
+export default function Loading() {
+  return (
+    <div>
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+      test
+    </div>
+  )
+}

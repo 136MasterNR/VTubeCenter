@@ -34,7 +34,7 @@ export function Search({ category, queryFilter }: Props) {
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={handleKeyPress}
       />
-      <button onClick={handleSearch}>
+      <button aria-label="Search" onClick={handleSearch}>
         <FontAwesomeIcon icon={faSearch} width={20} height={20} />
       </button>
     </div>

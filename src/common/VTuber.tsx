@@ -54,11 +54,11 @@ export const VTuber = (props: IProps) => {
       }}
     >
       <div className="header">
-        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" draggable="false" />
+        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" draggable={false} />
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" draggable="false" />
+        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" draggable={false} />
       </div>
 
       <div className="badges">
@@ -82,7 +82,7 @@ export const VTuber = (props: IProps) => {
 
       <div className="social_media">
         {social_media.map((media, index) => (
-          <Icon key={index} icon={media.icon} remote={media.url} size={26} />
+          <Icon key={index} icon={media.icon} remote={media.url} size={26} aria-label={media.icon} />
         ))}
       </div>
 
