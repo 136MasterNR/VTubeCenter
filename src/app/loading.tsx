@@ -1,36 +1,13 @@
-export default function Loading() {
+import '../scss/loading.scss';
+
+export interface LoadingProps {
+  loading: boolean;
+}
+
+export default function Loading({ loading }: LoadingProps) {
   return (
-    <div>
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
-      test
+    <div id="loading" className={`loading ${loading ? '' : 'loading-active'}`}>
+      Loading...
     </div>
   )
 }

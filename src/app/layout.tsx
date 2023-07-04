@@ -1,11 +1,3 @@
-import '../scss/globals.scss'
-
-import { Plus_Jakarta_Sans } from 'next/font/google'
-const fontPrimary = Plus_Jakarta_Sans({ subsets: ['latin'] })
-
-import React, {Suspense} from 'react'
-import Loading from './loading'
-
 export const metadata = {
   title: 'VTube Center',
   description: 'Get a list of every anime Virtual Doggirl in the world!',
@@ -43,19 +35,49 @@ export const metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+"use client"
+
+import { useState, useEffect } from 'react';
+
+import '../scss/globals.scss';
+import Loading from './loading'
+
+import { Plus_Jakarta_Sans } from 'next/font/google'
+const fontPrimary = Plus_Jakarta_Sans({ subsets: ['latin'] })
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 750);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      const loadingElement = document.getElementById('loading');
+      if (loadingElement) {
+        const animationEndHandler = () => {
+          loadingElement.style.display = 'none';
+          loadingElement.removeEventListener('animationend', animationEndHandler);
+        };
+
+        loadingElement.addEventListener('animationend', animationEndHandler);
+        loadingElement.classList.add('loading-fade-out');
+      }
+    }
+  }, [loading]);
+
   return (
     <html lang="en">
-      <Suspense fallback={<Loading/>}>
-        <body className={fontPrimary.className}>
-          {children}
-          <div className="bg"></div>
-        </body>
-      </Suspense>
+      <body className={fontPrimary.className}>
+        <Loading loading={loading}/>
+        {children}
+        <div className="bg"></div>
+      </body>
     </html>
-  )
+  );
 }

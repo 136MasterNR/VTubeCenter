@@ -1,0 +1,33 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 25, 25);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  font-size: 25px;
+}
+
+.loading-active {
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.loading-fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
