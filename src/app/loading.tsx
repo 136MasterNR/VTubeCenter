@@ -32,6 +32,7 @@ export default function Loading() {
 
   return (
     <div id="loading" className={`loading ${loading ? '' : 'loading-active'}`}>
+      <object data="/img/assets/loading.svg" width={180}></object>
       Loading...
     </div>
   )
