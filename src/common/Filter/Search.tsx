@@ -17,10 +17,14 @@ export function Search({ category, queryFilter }: Props) {
   }
 
   const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      handleSearch()
+    switch (e.key) {
+      case 'Enter':
+        handleSearch();
+        break;
+      default:
+        break;
     }
-  }
+  };
 
   return (
     <div>
