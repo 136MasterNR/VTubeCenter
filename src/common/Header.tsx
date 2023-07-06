@@ -1,3 +1,5 @@
+'use client'
+
 import '../scss/header.scss'
 
 import React, { useEffect, useState } from 'react'

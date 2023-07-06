@@ -3,7 +3,7 @@ import '@/scss/vtubers.scss'
 import React from 'react'
 
 import { Categories } from '@/data/categories'
-import CategoryPage from '@/common/Category'
+import { CategoryPage }from '@/common'
 
 interface IProps {
   params: {

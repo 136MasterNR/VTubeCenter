@@ -6,13 +6,13 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { IVTuber } from '@/data/categories/types'
 
-import { VTuber, Header } from '@/common'
+import { VTuber, Header, Skeleton } from '@/common'
 
 interface IProps {
   content: IVTuber[]
 }
 
-export default function CategoryPage({ content }: IProps) {
+export function CategoryPage({ content }: IProps) {
   const [filteredContent, setFilteredContent] = useState(content)
 
   const queryFilter = (query: string) => {

@@ -1,0 +1,29 @@
+div#skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(37, 37, 37);
+  border-radius: 1em;
+
+  @keyframes skeletonShine {
+    0% {
+      opacity: 0
+    }
+    50% {
+      opacity: 0.25
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba($color: #FFF, $alpha: 0.1);
+    animation: skeletonShine 1.5s ease infinite;
+  }
+}
