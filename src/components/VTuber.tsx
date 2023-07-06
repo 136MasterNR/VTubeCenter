@@ -108,9 +108,9 @@ export const VTuber = (props: IProps) => {
                 ))}
             </div>
 
-            <div className='name fontSansJP'>{name}</div>
+            <div className='name'>{name}</div>
 
-            <div className='affiliation fontSansJP'>
+            <div className='affiliation'>
                 {affiliation !== 'Independent' ? (
                     <a
                         href={affiliationURL}

@@ -39,6 +39,9 @@ import '../scss/globals.scss'
 import { Nav } from '@/components/Nav'
 import Loading from './loading'
 
+import { Plus_Jakarta_Sans } from 'next/font/google'
+const fontPrimary = Plus_Jakarta_Sans({ subsets: ['latin'] })
+
 export default function RootLayout({
     children,
 }: {
@@ -46,7 +49,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="fontPrimary">
+            <body className={fontPrimary.className}>
                 <Nav />
                 <Loading />
                 {children}
