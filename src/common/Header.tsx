@@ -1,6 +1,8 @@
 import '../scss/header.scss'
 
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+
 import { Search } from './Filter/Search'
 
 interface IProps {
@@ -32,7 +34,11 @@ export const Header = (props: IProps) => {
         <div className="header-content">
           <div className="header-branding">
             <a href="/" rel="noopener noreferrer">
-              <img src="/favicon.ico" alt="logo" width={36} height={36} />
+              <Image
+                src="/favicon.ico"
+                alt="logo"
+                width={36}
+                height={36} />
             </a>
             <p>/ {directory}</p>
           </div>
@@ -43,7 +49,7 @@ export const Header = (props: IProps) => {
                 #{directory}
               </div>
             </div>
-            <div className="searchbar-foreground"></div>
+            <div className="searchbar-foreground"/>
           </div>
         </div>
       </header>

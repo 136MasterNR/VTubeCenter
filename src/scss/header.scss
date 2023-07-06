@@ -41,6 +41,8 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     filter: grayscale(75%);
+
+    image-rendering: optimizeSpeed;
   }
 
   div.header-content {
@@ -156,6 +158,8 @@ header {
         url('/img/model/inugami_korone.webp');
       background-position: top;
       background-size: cover;
+
+      image-rendering: auto;
     }
   }
 }

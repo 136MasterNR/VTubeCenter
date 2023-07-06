@@ -2,6 +2,7 @@
 
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import Image from 'next/image'
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { Icon } from './Icon';
@@ -54,7 +55,14 @@ export const VTuber = (props: IProps) => {
       }}
     >
       <div className="header">
-        <img src={`/img/header/${username}.webp`} alt={username} loading="lazy" draggable={false} />
+      <Image
+        src={`/img/header/${username}.webp`}
+        alt={username}
+        loading="lazy"
+        draggable={false}
+        width={435}
+        height={110}
+      />
       </div>
 
       <div className="avatar">
