@@ -1,0 +1,43 @@
+div.global-search {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.search-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2.5px 10px;
+        gap: 5px;
+
+        color: #a4a4a4;
+        background-color: #494949;
+        border-radius: 99em;
+
+        input {
+            width: 200px;
+            
+            font-weight: 500;
+            color: #a4a4a4;
+
+            outline: none;
+            border: none;
+            background: none;
+        }
+    }
+
+    div.search-results {
+        position: absolute;
+        top: 45px;
+
+        background-color: #262626;
+        color: #d2d2d2;
+
+        padding: 15px 20px;
+
+        border-radius: 0.5em;
+    }
+}

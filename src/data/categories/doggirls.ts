@@ -1,4 +1,4 @@
-import { IVTuber } from './types'
+import { IVTuber } from './Types'
 
 import { rgb } from 'polished'
 

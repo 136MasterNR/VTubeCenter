@@ -1,0 +1,43 @@
+nav#top-nav {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 45px;
+    width: 100%;
+
+    background-color: #1d1d1d;
+    z-index: 9999;
+
+    div.nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1500px;
+
+        div.nav-right {
+            display: flex;
+            align-items: center;
+
+            gap: 25px;
+
+            a {
+                font-size: 15px;
+                font-weight: 500;
+
+                color: #ababab;
+                text-decoration: none;
+
+                transition: 0.15s ease-in-out;
+
+                &:hover {
+                    color: #ececec;
+                }
+            }
+        }
+    }
+}
