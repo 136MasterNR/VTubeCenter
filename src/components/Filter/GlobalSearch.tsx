@@ -97,6 +97,13 @@ export const GlobalSearch: React.FC = () => {
                                     <h2>{vtuber.name}</h2>
                                     <p># {getCategoryName(vtuber)}</p>
                                 </div>
+                                <div
+                                    className="vtuber-card-bg"
+                                    style={{
+                                        backgroundImage: `url(/img/header/${vtuber.username}.webp)`,
+                                        backgroundSize: 'cover',
+                                    }}
+                                />
                             </div>
                         </Link>
                     ))}
@@ -104,13 +111,4 @@ export const GlobalSearch: React.FC = () => {
             )}
         </div>
     )
-}
-
-const getCategoryName = (vtuber: IVTuber): string | undefined => {
-    for (const category of Categories) {
-        if (category.list?.includes(vtuber)) {
-            return category.name
-        }
-    }
-    return undefined
 }
