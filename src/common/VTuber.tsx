@@ -66,7 +66,14 @@ export const VTuber = (props: IProps) => {
       </div>
 
       <div className="avatar">
-        <img src={`/img/avatar/${username}.webp`} alt={username} loading="lazy" draggable={false} />
+        <Image
+          src={`/img/avatar/${username}.webp`}
+          alt={username}
+          loading="lazy"
+          draggable={false}
+          width={85}
+          height={85}
+        />
       </div>
 
       <div className="badges">
