@@ -57,23 +57,21 @@ export function Search({
     }
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value
-        setQuery(value)
-
-        if (autoSearch && autoSearchDelay > 0) {
+        const value = e.target.value;
+        setQuery(value);
+    
+        if (autoSearchDelay > 0) {
             if (searchTimeout) {
-                clearTimeout(searchTimeout)
+                clearTimeout(searchTimeout);
             }
-
-            if (value.length > 0) {
-                setSearchTimeout(
-                    setTimeout(() => {
-                        handleSearch()
-                    }, autoSearchDelay)
-                )
-            }
+    
+            setSearchTimeout(
+                setTimeout(() => {
+                    handleSearch();
+                }, autoSearchDelay)
+            );
         }
-    }
+    };
 
     const handleInputFocus = () => {
         if (onFocus) {

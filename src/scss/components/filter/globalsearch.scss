@@ -18,8 +18,8 @@ div.global-search {
         border-radius: 99em;
 
         input {
-            width: 200px;
-            
+            width: 280px;
+
             font-weight: 500;
             color: #a4a4a4;
 
@@ -31,13 +31,54 @@ div.global-search {
 
     div.search-results {
         position: absolute;
+        overflow: hidden;
+
         top: 45px;
+
+        display: flex;
+        flex-direction: column;
 
         background-color: #262626;
         color: #d2d2d2;
 
-        padding: 15px 20px;
-
         border-radius: 0.5em;
+
+        div.vtuber-card-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 15px 20px;
+
+            img {
+                border-radius: 1em;
+            }
+
+            div.vtuber-row-info {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                align-items: right;
+
+                gap: 0;
+
+                flex-grow: 100;
+
+                h2,
+                p {
+                    line-height: 0;
+                    padding: 0;
+                }
+            }
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1c1c1c;
+            }
+        }
     }
 }

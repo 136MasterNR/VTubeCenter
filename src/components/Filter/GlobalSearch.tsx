@@ -2,22 +2,27 @@
 
 import '@/scss/components/filter/globalsearch.scss'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+
+import Link from 'next/link'
+import Image from 'next/image'
 
 import { Categories, Global } from '@/data/Categories/index'
 
 import { IVTuber } from '@/data/Categories/Types'
 
 import { Search } from './Search'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 export const GlobalSearch: React.FC = () => {
     const [searchInput, setSearchInput] = useState('')
     const [isFocused, setIsFocused] = useState(false)
+    const searchResultsRef = useRef<HTMLDivElement>(null)
 
     const handleQueryFilter = (query: string) => {
-        setSearchInput(query.toLowerCase()) // I forgot to mention this, having it search in lowercase gives more accurate results. great notes for u 136
+        setSearchInput(query.toLowerCase())
     }
 
     const handleInputFocus = () => {
@@ -37,28 +42,63 @@ export const GlobalSearch: React.FC = () => {
 
     const searchResults: IVTuber[] = filteredResults.slice(0, 5)
 
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                searchResultsRef.current &&
+                !searchResultsRef.current.contains(event.target as Node)
+            ) {
+                setSearchInput('') // Clear search input when clicked outside
+            }
+        }
+
+        window.addEventListener('click', handleClickOutside)
+        return () => {
+            window.removeEventListener('click', handleClickOutside)
+        }
+    }, [])
+
+    const getCategoryName = (vtuber: IVTuber): string | undefined => {
+        for (const category of Categories) {
+            if (category.list?.includes(vtuber)) {
+                return category.name
+            }
+        }
+        return undefined
+    }
+
     return (
         <div className="global-search">
             <div className="search-input">
                 <FontAwesomeIcon icon={faMagnifyingGlass} width={12} />
                 <Search
                     queryFilter={handleQueryFilter}
-                    overrideText='Search'
+                    overrideText="Search"
                     onFocus={handleInputFocus}
                     onBlur={handleInputBlur}
                     hideButton={true}
-                    autoSearch={true}
-                    autoSearchDelay={1}
                 />
             </div>
 
-            {isFocused && searchInput !== '' && (
-                <div className="search-results">
+            {searchInput !== '' && (
+                <div className="search-results" ref={searchResultsRef}>
                     {searchResults.map((vtuber) => (
-                        <div key={vtuber.name}>
-                            <h2>{vtuber.name}</h2>
-                            <p>Category: {getCategoryName(vtuber)}</p>
-                        </div>
+                        <Link key={vtuber.name} href={'/u/' + vtuber.username}>
+                            <div className="vtuber-card-row">
+                                <Image
+                                    src={`/img/avatar/${vtuber.username}.webp`}
+                                    alt={vtuber.name}
+                                    loading="lazy"
+                                    draggable={false}
+                                    width={65}
+                                    height={65}
+                                />
+                                <div className="vtuber-row-info">
+                                    <h2>{vtuber.name}</h2>
+                                    <p># {getCategoryName(vtuber)}</p>
+                                </div>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             )}
