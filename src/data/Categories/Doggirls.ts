@@ -823,6 +823,7 @@ export const Doggirls: IVTuber[] = [
     description: 'No description provided.',
     language: 'English',
     colorScheme: rgb(210, 180, 148),
+    featured: true,
     social_media: [
       {
         icon: faYoutube,
