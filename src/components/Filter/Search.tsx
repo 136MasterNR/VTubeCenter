@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, KeyboardEvent } from 'react'
+import React, { useState, KeyboardEvent } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,8 +10,6 @@ interface Props {
   onFocus?: () => void
   onBlur?: () => void
   hideButton?: boolean
-  autoSearch?: boolean
-  autoSearchDelay?: number
   overrideText?: string
 }
 
@@ -21,31 +19,15 @@ export function Search({
   onFocus,
   onBlur,
   hideButton = false,
-  autoSearch = false,
-  autoSearchDelay = 25,
   overrideText,
 }: Props) {
   const [query, setQuery] = useState('')
-  const [searchTimeout, setSearchTimeout] = useState<NodeJS.Timeout | null>(
-    null
-  )
-
-  useEffect(() => {
-    return () => {
-      if (searchTimeout) {
-        clearTimeout(searchTimeout)
-      }
-    }
-  }, [searchTimeout])
 
   const handleSearch = () => {
     queryFilter(query)
   }
 
   const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-    if ( autoSearch == true ) {
-      handleSearch()
-    } else {
       switch (e.key) {
         case 'Enter':
           handleSearch()
@@ -53,24 +35,12 @@ export function Search({
         default:
           break
       }
-    }
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setQuery(value)
 
-    if (autoSearchDelay > 0) {
-      if (searchTimeout) {
-        clearTimeout(searchTimeout)
-      }
-
-      setSearchTimeout(
-        setTimeout(() => {
-          handleSearch()
-        }, autoSearchDelay)
-      )
-    }
   }
 
   const handleInputFocus = () => {
