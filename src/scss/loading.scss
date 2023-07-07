@@ -1,47 +1,47 @@
 .loading {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 10px;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    background-color: rgb(25, 25, 25);
-    opacity: 1;
+  background-color: rgb(25, 25, 25);
+  opacity: 1;
 
-    color: white;
-    font-size: 25px;
-    overflow-wrap: break-word;
+  color: white;
+  font-size: 25px;
+  overflow-wrap: break-word;
 
-    transition: opacity 0.3s ease-in-out;
-    z-index: 9999;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
 
-    object {
-        min-height: 180px;
-        max-height: 180px;
-    }
+  object {
+    min-height: 180px;
+    max-height: 180px;
+  }
 }
 
 .loading-active {
-    opacity: 0;
+  opacity: 0;
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .loading-fade-out {
-    animation: fadeOut 0.3s ease-in-out forwards;
+  animation: fadeOut 0.3s ease-in-out forwards;
 }

@@ -10,7 +10,7 @@ export default function Loading() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 750)
+        }, 150)
 
         return () => clearTimeout(timer)
     }, [])

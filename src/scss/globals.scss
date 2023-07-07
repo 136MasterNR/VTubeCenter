@@ -1,41 +1,41 @@
 html {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    // Firefox Scrollbar
-    scrollbar-color: lightgray transparent;
-    scrollbar-width: thin;
+  // Firefox Scrollbar
+  scrollbar-color: lightgray transparent;
+  scrollbar-width: thin;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
+  background-color: rgb(25, 25, 25);
+
+  *::selection {
+    background-color: rgba(129, 125, 207, 0.55);
+  }
+
+  .bg {
+    position: fixed;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -9;
     background-color: rgb(25, 25, 25);
-
-    *::selection {
-        background-color: rgba(129, 125, 207, 0.55);
-    }
-
-    .bg {
-        position: fixed;
-        top: 0;
-
-        height: 100%;
-        width: 100%;
-
-        z-index: -9;
-        background-color: rgb(25, 25, 25);
-    }
+  }
 }
