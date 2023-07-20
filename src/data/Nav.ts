@@ -5,8 +5,8 @@ interface NavLink {
 
 export const NavLinks: NavLink[] = [
     {
-        text: 'Partners',
-        remote: '/partners',
+        text: 'Credits',
+        remote: '/credits',
     },
     {
         text: 'Contact',

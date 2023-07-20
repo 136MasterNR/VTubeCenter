@@ -29,11 +29,7 @@ div.dropdown-wrapper {
         }
 
         svg {
-            transition: 0.15s ease-in-out;
-
-            &.active {
-                transform: rotateZ(180deg);
-            }
+            margin-top: 5px;
         }
     }
 
