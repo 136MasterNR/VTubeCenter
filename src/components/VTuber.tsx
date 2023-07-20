@@ -7,7 +7,10 @@ import Image from 'next/image'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { Icon } from './Common/Icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingUser, faStar } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBuildingUser,
+  faStar
+} from '@fortawesome/free-solid-svg-icons'
 
 import { Noto_Sans_JP } from 'next/font/google'
 const fontJP = Noto_Sans_JP({
