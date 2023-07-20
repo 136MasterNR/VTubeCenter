@@ -15,7 +15,7 @@ nav#top-nav {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(25, 25, 25, 0.85);
+    background-color: rgba(29, 29, 29, 0.85);
     backdrop-filter: blur(3px);
     z-index: -1;
   }
@@ -54,4 +54,8 @@ nav#top-nav {
       margin-top: 4px;
     }
   }
+}
+
+.nav-space {
+  height: 40px;
 }

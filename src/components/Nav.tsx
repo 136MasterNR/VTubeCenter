@@ -11,6 +11,7 @@ import { NavLinks } from '@/data/Nav'
 
 export const Nav = () => {
   return (
+    <>
     <nav id="top-nav">
       <div className="nav-content">
         <div className="nav-left">
@@ -27,5 +28,7 @@ export const Nav = () => {
         </div>
       </div>
     </nav>
+    <div className="nav-space"></div>
+    </>
   )
 }

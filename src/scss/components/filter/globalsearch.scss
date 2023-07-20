@@ -1,114 +1,119 @@
 div.global-search {
-    position: relative;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.5px 10px;
+    gap: 5px;
+
+    background-color: rgba(73, 73, 73, 0.3);
+
+    color: #a4a4a4;
+    border-radius: 99em;
+
+    &:focus {
+      background-color: #494949;
+    }
+
+    input {
+      width: 280px;
+
+      font-weight: 500;
+      color: #a4a4a4;
+
+      outline: none;
+      border: none;
+      background: none;
+    }
+  }
+
+  div.search-results {
+    width: 100%;
+
+    position: absolute;
+    overflow: hidden;
+
+    top: 45px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    div.search-input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    gap: 2px;
 
-        padding: 2.5px 10px;
-        gap: 5px;
+    background-color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    color: #e6e6e6;
 
-        color: #a4a4a4;
-        background-color: #494949;
-        border-radius: 99em;
+    border-radius: 0.5em;
 
-        input {
-            width: 280px;
+    div.vtuber-card-row {
+      position: relative;
+      overflow: hidden;
 
-            font-weight: 500;
-            color: #a4a4a4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-            outline: none;
-            border: none;
-            background: none;
-        }
-    }
+      height: 80px;
+      gap: 15px;
 
-    div.search-results {
-        width: 100%;
-        
-        position: absolute;
-        overflow: hidden;
+      padding: 15px 20px;
 
-        top: 45px;
+      img {
+        border-radius: 1em;
 
+        z-index: 1;
+      }
+
+      div.vtuber-row-info {
         display: flex;
         flex-direction: column;
 
-        gap: 2px;
+        justify-content: center;
+        align-items: right;
 
-        background-color: #1c1c1c;
-        border: 2px solid #1c1c1c;
-        color: #e6e6e6;
+        gap: 0;
 
-        border-radius: 0.5em;
+        flex-grow: 100;
 
-        div.vtuber-card-row {
-            position: relative;
-            overflow: hidden;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            height: 80px;
-            gap: 15px;
-
-            padding: 15px 20px;
-
-            img {
-                border-radius: 1em;
-
-                z-index: 1;
-            }
-
-            div.vtuber-row-info {
-                display: flex;
-                flex-direction: column;
-
-                justify-content: center;
-                align-items: right;
-
-                gap: 0;
-
-                flex-grow: 100;
-
-                h2,
-                p {
-                    line-height: 0;
-                    padding: 0;
-                }
-
-                z-index: 1;
-            }
-
-            div.vtuber-card-bg {
-                position: absolute;
-
-                top: 0;
-                left: 0;
-
-                height: 100%;
-                width: 100%;
-
-                opacity: 0.15;
-                z-index: 0;
-
-                transition: 0.5s ease;
-            }
-
-            cursor: pointer;
-
-            &:hover {
-                div.vtuber-card-bg {
-                    scale: 1.1;
-                }
-            }
+        h2,
+        p {
+          line-height: 0;
+          padding: 0;
         }
+
+        z-index: 1;
+      }
+
+      div.vtuber-card-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+
+        opacity: 0.15;
+        z-index: 0;
+
+        transition: 0.5s ease;
+      }
+
+      cursor: pointer;
+
+      &:hover {
+        div.vtuber-card-bg {
+          scale: 1.1;
+        }
+      }
     }
+  }
 }
