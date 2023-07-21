@@ -50,6 +50,24 @@ nav#top-nav {
           color: #ececec;
         }
       }
+
+      .donate {
+        display: flex;
+        gap: 5px;
+
+        padding: 2px;
+
+        svg {
+          position: relative;
+          top: 2.5px;
+        }
+
+        &:hover {
+          color: rgba(29, 29, 29, 1);
+          background-color: rgb(255, 235, 95);
+          border-radius: 5px;
+        }
+      }
     }
 
     div.nav-left {

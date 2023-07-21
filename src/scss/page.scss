@@ -147,7 +147,7 @@
         &::before {
           background-image: url('/img/header/inugami_korone.webp');
 
-          filter: grayscale(1) brightness(0.4) contrast(1.1);
+          filter: grayscale(1) brightness(0.45) contrast(1.1) opacity(0.75);
         }
 
         &::after {
@@ -166,7 +166,7 @@
         &::before {
           background-image: url('/img/header/pochi_wanmaru.webp');
 
-          filter: opacity(0.65) grayscale(1) brightness(0.5) contrast(1.1)
+          filter: opacity(0.65) grayscale(1) brightness(0.45) contrast(1.1)
             blur(2px);
         }
 
@@ -175,7 +175,7 @@
 
           left: 32.5px;
 
-          filter: brightness(0.7) blur(1px);
+          filter: brightness(0.65) blur(1px);
         }
       }
 
