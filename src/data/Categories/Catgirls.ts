@@ -26,15 +26,19 @@ export const Catgirls: IVTuber[] = [
     social_media: [
       {
         icon: faYoutube,
-        url: 'https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q',
+        url: 'https://www.youtube.com/nyanners',
       },
       {
-        icon: faBilibili,
-        url: 'https://space.bilibili.com/412135619',
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/nyanners',
       },
       {
         icon: faTwitter,
-        url: 'https://twitter.com/inugamikorone',
+        url: 'https://twitter.com/NyanNyanners',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/nyakuza',
       },
     ],
   },

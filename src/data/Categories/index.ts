@@ -16,12 +16,12 @@ interface Global {
 export const Categories: Category[] = [
   {
     type: 'doggirls',
-    name: 'Doggirls',
+    name: 'doggirls',
     list: Doggirls,
   },
   {
     type: 'catgirls',
-    name: 'Catgirls',
+    name: 'catgirls',
     list: Catgirls,
   },
 ]
