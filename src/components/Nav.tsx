@@ -22,7 +22,7 @@ export const Nav = () => {
         <div className="nav-right">
           <Dropdown text="Categories">Doggirls , Catgirls</Dropdown>
           {NavLinks.map(({ text, remote }) => (
-            <a href={remote}>{text}</a>
+            <Link href={remote}>{text}</Link>
           ))}
           <GlobalSearch />
         </div>
