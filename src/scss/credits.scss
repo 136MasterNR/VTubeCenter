@@ -1,0 +1,56 @@
+.credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  gap: 100px;
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    top: 20vh;
+
+    position: relative;
+
+    > .about {
+      margin: auto auto;
+
+      .name {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .txt {
+        color: rgb(225, 225, 225);
+        font-size: 18px;
+        font-weight: 600;
+
+        .social {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+
+          font-size: 28px;
+
+          > a svg {
+            color: white;
+          }
+        }
+      }
+    }
+    
+    > img {
+      width: 128px;
+      height: 128px;
+
+      border-radius: 25px;
+    }
+  }
+}
