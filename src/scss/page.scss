@@ -93,9 +93,9 @@
       position: relative;
 
       width: 600px;
-      height: 400px;
+      height: 550px;
 
-      top: -100px;
+      top: -150px;
       left: 200px;
 
       overflow: hidden;
@@ -138,7 +138,7 @@
 
       > div:nth-child(1) {
         left: 125px;
-        top: 200px;
+        top: 250px;
 
         z-index: 3;
 
@@ -155,7 +155,7 @@
 
       > div:nth-child(2) {
         left: 250px;
-        top: 140px;
+        top: 190px;
 
         z-index: 2;
 
@@ -177,7 +177,7 @@
 
       > div:nth-child(3) {
         left: 75px;
-        top: 95px;
+        top: 145px;
 
         z-index: 1;
 
@@ -194,6 +194,20 @@
           filter: brightness(0.2) blur(4px);
         }
       }
+
+      > svg {
+        position: absolute;
+        left: 155px;
+        top: 44px;
+
+        z-index: -1;
+
+        filter: blur(45px) opacity(0.25);
+
+        path {
+          fill: white;
+        }
+    }
     }
 
     svg.bg-blur {

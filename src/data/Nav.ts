@@ -8,8 +8,4 @@ export const NavLinks: NavLink[] = [
         text: 'Credits',
         remote: '/credits',
     },
-    {
-        text: 'Contact',
-        remote: '/contact',
-    },
 ]

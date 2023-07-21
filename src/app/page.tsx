@@ -30,6 +30,9 @@ export default function Home() {
           <div></div>
           <div></div>
           <div></div>
+          <svg width="312" height="414" viewBox="0 0 312 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M168.442 0L311.942 414L0 405.75L168.442 0Z" fill="none"/>
+          </svg>
         </div>
         <svg
           className="bg-blur"
