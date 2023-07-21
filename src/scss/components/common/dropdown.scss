@@ -1,49 +1,60 @@
 div.dropdown-wrapper {
-    position: relative;
+  position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.dropdown-button {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    div.dropdown-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    font-size: 15px;
+    font-weight: 500;
 
-        font-size: 15px;
-        font-weight: 500;
+    color: #ababab;
+    gap: 5px;
 
-        color: #ababab;
-        gap: 5px;
+    cursor: pointer;
 
-        cursor: pointer;
+    transition: 0.15s ease-in-out;
 
-        transition: 0.15s ease-in-out;
-
-        &:hover {
-            color: #ececec;
-        }
-
-        &.active {
-            color: #ececec;
-        }
-
-        svg {
-            margin-top: 5px;
-        }
+    &:hover {
+      color: #ececec;
     }
 
-    div.dropdown-content {
-        position: absolute;
-
-        background-color: rgba(29, 29, 29, 0.9);
-        backdrop-filter: blur(5px);
-        color: #d2d2d2;
-
-        white-space: nowrap;
-
-        padding: 15px 20px;
-
-        border-radius: 0.5em;
+    &.active {
+      color: #ececec;
     }
+
+    svg {
+      margin-top: 5px;
+    }
+  }
+
+  div.dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    background-color: rgba(29, 29, 29, 0.9);
+    backdrop-filter: blur(5px);
+    color: #d2d2d2;
+
+    white-space: nowrap;
+
+    border-radius: 0.5em;
+
+    > a div:first-child {
+        padding-top: 20px;
+    }
+
+    > a div {
+      padding: 10px 35px 20px;
+
+      background-color: transparent;
+    }
+  }
 }
