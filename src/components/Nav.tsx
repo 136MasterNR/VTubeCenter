@@ -29,7 +29,7 @@ export const Nav = () => {
                 Doggirls
               </div>
             </Link>
-            <Link href={"/c/Catgirls"} className='categoryItem'>
+            <Link href={"/c/catgirls"} className='categoryItem'>
               <div>
                 Catgirls
               </div>

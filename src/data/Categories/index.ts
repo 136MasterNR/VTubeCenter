@@ -1,31 +1,31 @@
 import { IVTuber } from './Types'
 
 import { Doggirls } from './Doggirls'
-import { Test } from './Test'
+import { Catgirls } from './Catgirls'
 
 interface Category {
-    type: string
-    name: string
-    list?: IVTuber[]
+  type: string
+  name: string
+  list?: IVTuber[]
 }
 
 interface Global {
-    list?: IVTuber[]
+  list?: IVTuber[]
 }
 
 export const Categories: Category[] = [
-    {
-        type: 'doggirls',
-        name: 'Doggirls',
-        list: Doggirls,
-    },
-    {
-        type: 'test',
-        name: 'Experimental',
-        list: Test,
-    },
+  {
+    type: 'doggirls',
+    name: 'Doggirls',
+    list: Doggirls,
+  },
+  {
+    type: 'catgirls',
+    name: 'Catgirls',
+    list: Catgirls,
+  },
 ]
 
 export const Global: Global = {
-    list: [...Doggirls, ...Test],
+  list: [...Doggirls, ...Catgirls],
 }

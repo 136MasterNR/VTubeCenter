@@ -145,13 +145,13 @@
         filter: opacity(1);
 
         &::before {
-          background-image: url('/img/header/inugami_korone.webp');
+          background-image: url('/img/header/doggirls/inugami_korone.webp');
 
           filter: grayscale(1) brightness(0.45) contrast(1.1) opacity(0.75);
         }
 
         &::after {
-          background-image: url('/img/model/inugami_korone.webp');
+          background-image: url('/img/model/doggirls/inugami_korone.webp');
         }
       }
 
@@ -164,14 +164,14 @@
         filter: opacity(0.3);
 
         &::before {
-          background-image: url('/img/header/pochi_wanmaru.webp');
+          background-image: url('/img/header/doggirls/pochi_wanmaru.webp');
 
           filter: opacity(0.65) grayscale(1) brightness(0.45) contrast(1.1)
             blur(2px);
         }
 
         &::after {
-          background-image: url('/img/model/pochi_wanmaru.webp');
+          background-image: url('/img/model/doggirls/pochi_wanmaru.webp');
 
           left: 32.5px;
 
@@ -188,14 +188,14 @@
         filter: opacity(0.25);
 
         &::before {
-          background-image: url('/img/header/shiki_miyoshino.webp');
+          background-image: url('/img/header/doggirls/shiki_miyoshino.webp');
 
           filter: opacity(0.45) grayscale(1) brightness(0.4) contrast(1.1)
             blur(4px);
         }
 
         &::after {
-          background-image: url('/img/model/shiki_miyoshino.webp');
+          background-image: url('/img/model/doggirls/shiki_miyoshino.webp');
 
           filter: brightness(0.4) blur(4px);
         }

@@ -3,6 +3,7 @@
 import '@/scss/components/header.scss'
 
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components';
 
 import { Search } from './Filter/Search'
 
@@ -26,19 +27,32 @@ function getPath() {
 export const Header = (props: IProps) => {
   const { directory = getPath(), queryFilter } = props
 
+  const Container = styled.header`
+    position: relative;
+
+    &::before {
+      background: linear-gradient(180deg, rgba(16, 16, 16, 0) 59.38%, var(--dark) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url('/img/header/${directory}/inugami_korone.webp'), lightgray 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  `;
+
   return (
     <div>
-      <header>
+      <Container>
         <div className="header-content">
           <div className="searchbar-content">
             <div className="searchbar">
               <Search queryFilter={queryFilter} category={directory} />
               <div className="hashtags">#{directory}</div>
             </div>
-            <div className="searchbar-foreground" />
+              <div className="searchbar-foreground" style={{
+                background: `linear-gradient(180deg, transparent 75%, rgb(23, 23, 25) 100%), url("/img/model/${directory}/inugami_korone.webp") top / cover`,
+              }} />
           </div>
         </div>
-      </header>
+      </Container>
     </div>
   )
 }

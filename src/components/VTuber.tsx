@@ -1,5 +1,7 @@
 'use client'
 
+import React, { useEffect, useState } from 'react'
+
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import Image from 'next/image'
@@ -48,6 +50,18 @@ export const VTuber = (props: IProps) => {
     social_media,
   } = props
 
+  const [Dir, setDir] = useState('')
+  function getPath() {
+    const [Dir, setDir] = useState('')
+  
+    useEffect(() => {
+      let newDir: any = window.location.pathname.split('/').pop()
+      newDir ? setDir(newDir) : setDir('doggirls')
+    }, [])
+  
+    return Dir
+  }
+
   return (
     <div
       className="vtuber"
@@ -57,7 +71,7 @@ export const VTuber = (props: IProps) => {
     >
       <div className="header">
         <Image
-          src={`/img/header/${username}.webp`}
+          src={`/img/header/${getPath()}/${username}.webp`}
           alt={username}
           loading="lazy"
           draggable={false}
@@ -68,7 +82,7 @@ export const VTuber = (props: IProps) => {
 
       <div className="avatar">
         <Image
-          src={`/img/avatar/${username}.webp`}
+          src={`/img/avatar/${getPath()}/${username}.webp`}
           alt={username}
           loading="lazy"
           draggable={false}
