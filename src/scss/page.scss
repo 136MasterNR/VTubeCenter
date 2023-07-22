@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
 
+  overflow: visible;
+
   .first-content {
     display: flex;
     flex-direction: row;
@@ -19,6 +21,8 @@
         margin: 0;
 
         color: rgb(185, 185, 185);
+
+        border-radius: 1999px;
 
         font-size: 35px;
         font-weight: 500;
@@ -153,6 +157,12 @@
         &::after {
           background-image: url('/img/model/doggirls/inugami_korone.webp');
         }
+
+        transition: 0.225s transform;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
       }
 
       > div:nth-child(2) {
@@ -177,6 +187,12 @@
 
           filter: brightness(0.65) blur(1px);
         }
+
+        transition: 0.3s transform;
+
+        &:hover {
+          transform: translateY(-3.5px);
+        }
       }
 
       > div:nth-child(3) {
@@ -199,6 +215,24 @@
 
           filter: brightness(0.4) blur(4px);
         }
+
+        transition: 0.2s transform;
+
+        &:hover {
+          transform: translateY(-2.75px);
+        }
+      }
+
+      @keyframes animateShowcaseBg {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.775);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
       > svg {
@@ -213,13 +247,15 @@
         path {
           fill: white;
         }
-    }
+
+        animation: animateShowcaseBg 5.5s ease-in-out infinite;
+      }
     }
 
     svg.bg-blur {
       position: absolute;
       left: -510px;
-      top: -240px;
+      top: -270px;
 
       z-index: -1;
 

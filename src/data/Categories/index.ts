@@ -22,21 +22,21 @@ export const Categories: Category[] = [
     name: 'Doggirls',
     list: Doggirls,
     featured: 'inugami_korone',
-    colorScheme: '244, 170, 73',
+    colorScheme: '245, 170, 75',
   },
   {
     type: 'catgirls',
     name: 'Catgirls',
     list: Catgirls,
     featured: 'NyanNyanners',
-    colorScheme: '174, 96, 193',
+    colorScheme: '175, 110, 200',
   },
   {
     type: 'foxgirls',
     name: 'Foxgirls',
     list: Foxgirls,
     featured: 'anny',
-    colorScheme: '230, 185, 186',
+    colorScheme: '230, 180, 180',
   },
 ]
 
