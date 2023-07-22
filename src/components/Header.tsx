@@ -13,7 +13,6 @@ interface IProps {
   queryFilter: (query: string) => void
   directory?: any
   dir?: any
-  currCategory: string
   children?: React.ReactNode
 }
 
