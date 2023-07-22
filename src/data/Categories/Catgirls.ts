@@ -18,10 +18,8 @@ export const Catgirls: IVTuber[] = [
     name: 'Nyatasha Nyanners',
     username: 'NyanNyanners',
     description:
-      'Korone has a sweet and goofy personality comparable to that of an actual dog. She often kisses other hololive members for no reason, and has a high-pitched laugh that resembles the cry of a screeching seagull.',
+      'Nyanners is a gentle, sensitive, and often energetic catgirl with a good sense of humor. However, her claims of being "seiso" or pure are offset by a tendency to use toilet jokes and reference adult, and often vastly obscure, topics. This contrast between pure and crude is considered by fans to be a defining aspect of Nyan\'s appeal. ',
     language: 'English',
-    affiliation: 'VShojo',
-    affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
     colorScheme: rgb(174, 96, 193),
     social_media: [
       {
