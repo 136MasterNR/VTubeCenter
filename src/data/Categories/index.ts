@@ -41,5 +41,5 @@ export const Categories: Category[] = [
 ]
 
 export const Global: Global = {
-  list: [...Doggirls, ...Catgirls],
+  list: [...Doggirls, ...Catgirls, ...Foxgirls],
 }
