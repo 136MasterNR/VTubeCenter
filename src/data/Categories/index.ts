@@ -7,6 +7,8 @@ interface Category {
   type: string
   name: string
   list?: IVTuber[]
+  featured: string
+  colorScheme: string
 }
 
 interface Global {
@@ -18,11 +20,15 @@ export const Categories: Category[] = [
     type: 'doggirls',
     name: 'doggirls',
     list: Doggirls,
+    featured: 'inugami_korone',
+    colorScheme: '244, 170, 73',
   },
   {
     type: 'catgirls',
     name: 'catgirls',
     list: Catgirls,
+    featured: 'NyanNyanners',
+    colorScheme: '174, 96, 193',
   },
 ]
 

@@ -95,7 +95,7 @@ export const GlobalSearch: React.FC = () => {
                 />
                 <div className="vtuber-row-info">
                   <h2>{vtuber.name}</h2>
-                  <p># {getCategoryName(vtuber)}</p>
+                  <p>#{getCategoryName(vtuber)}</p>
                 </div>
                 <div
                   className="vtuber-card-bg"
