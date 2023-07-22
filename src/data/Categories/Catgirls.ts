@@ -45,7 +45,7 @@ export const Catgirls: IVTuber[] = [
     username: 'nekomataokayu',
     description:
       'Okayu is typically very relaxed, free-spirited, and also somewhat of a playboy or prankster. She sometimes flirts openly with other hololive members just to see their reactions and is also known for impulsively swiping food. She typically likes to talk a lot and through many streams likes to talk about daily activities and old stories.',
-    language: 'English',
+    language: 'Japanese',
     affiliation: 'Hololive Gamers',
     affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
     colorScheme: rgb(177, 144, 252),

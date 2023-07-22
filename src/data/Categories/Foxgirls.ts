@@ -46,6 +46,8 @@ export const Foxgirls: IVTuber[] = [
     description:
       'Fubuki is usually always cheerful and excited, singing little songs and making many in-jokes. She is shy when confronted with new circumstances, and when embarrassed she "hides" at the bottom of the screen with only her fox ears peeking up. She becomes enthralled in games and has cute conversations with scripted game characters, or voice acts as characters while making effects.',
     language: 'Japanese',
+    affiliation: 'Hololive Gamers',
+    affiliationURL: 'https://hololive.hololivepro.com/en/talents?gp=gamers',
     colorScheme: rgb(125, 184, 217),
     social_media: [
       {
