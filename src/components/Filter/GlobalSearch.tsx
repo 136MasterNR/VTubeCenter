@@ -58,10 +58,10 @@ export const GlobalSearch: React.FC = () => {
     }
   }, [])
 
-  const getCategoryName = (vtuber: IVTuber): string | undefined => {
+  const getCategoryType = (vtuber: IVTuber): string | undefined => {
     for (const category of Categories) {
       if (category.list?.includes(vtuber)) {
-        return category.name
+        return category.type
       }
     }
     return undefined
@@ -86,7 +86,7 @@ export const GlobalSearch: React.FC = () => {
             <Link key={vtuber.name} href={'/u/' + vtuber.username}>
               <div className="vtuber-card-row">
                 <Image
-                  src={`/img/avatar/${getCategoryName(vtuber)}/${vtuber.username}.webp`}
+                  src={`/img/avatar/${getCategoryType(vtuber)}/${vtuber.username}.webp`}
                   alt={vtuber.name}
                   loading="lazy"
                   draggable={false}
@@ -95,12 +95,12 @@ export const GlobalSearch: React.FC = () => {
                 />
                 <div className="vtuber-row-info">
                   <h2>{vtuber.name}</h2>
-                  <p>#{getCategoryName(vtuber)}</p>
+                  <p>#{getCategoryType(vtuber)}</p>
                 </div>
                 <div
                   className="vtuber-card-bg"
                   style={{
-                    backgroundImage: `url(/img/header/${getCategoryName(vtuber)}/${vtuber.username}.webp)`,
+                    backgroundImage: `url(/img/header/${getCategoryType(vtuber)}/${vtuber.username}.webp)`,
                     backgroundSize: 'cover',
                   }}
                 />

@@ -6,6 +6,8 @@ import Image from 'next/image'
 
 import { Dropdown, GlobalSearch } from '@/components'
 
+import { Categories } from '@/data/Categories/index'
+
 import { NavLinks } from '@/data/Nav'
 
 export const Nav = () => {
@@ -24,16 +26,13 @@ export const Nav = () => {
             Buy me a coffee!
           </Link>
           <Dropdown text="Categories">
-            <Link href={"/c/doggirls"} className='categoryItem'>
+          {Categories.map((item: any) => (
+            <Link key={item.id} href={`/c/${item.type}`} className='categoryItem'>
               <div>
-                Doggirls
+                {item.name}
               </div>
             </Link>
-            <Link href={"/c/catgirls"} className='categoryItem'>
-              <div>
-                Catgirls
-              </div>
-            </Link>
+          ))}
           </Dropdown>
           {NavLinks.map(({ text, remote }) => (
             <Link href={remote}>{text}</Link>

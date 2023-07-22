@@ -18,8 +18,9 @@ interface IProps {
 
 function getCategory(directory: string, item: string) {
   for (const category of Categories) {
-    if (directory===category.name) {
+    if (directory===category.type) {
       if (item=="name") {return category.name}
+      if (item=="type") {return category.type}
       if (item=="featured") {return category.featured}
       if (item=="colorScheme") {return category.colorScheme}
     }
@@ -40,6 +41,7 @@ export const Header = (props: IProps) => {
   const { queryFilter } = props;
   const [directory, setDirectory] = useState(getPath());
   const [categoryName, setCategoryName] = useState(getCategory(directory, "name"));
+  const [categoryType, setCategoryType] = useState(getCategory(directory, "type"));
   const [colorScheme, setColorScheme] = useState(getCategory(directory, "colorScheme"));
   const [categoryFeatured, setCategoryFeatured] = useState(getCategory(directory, "featured"));
 
@@ -48,18 +50,22 @@ export const Header = (props: IProps) => {
   }, []);
 
   useEffect(() => {
-    setCategoryFeatured(getCategory(getPath(), "featured"));
+    setCategoryName(getCategory(getPath(), "name"));
   }, []);
 
   useEffect(() => {
-    setCategoryName(getCategory(getPath(), "name"));
+    setCategoryType(getCategory(getPath(), "type"));
+  }, []);
+
+  useEffect(() => {
+    setCategoryFeatured(getCategory(getPath(), "featured"));
   }, []);
 
   useEffect(() => {
     setColorScheme(getCategory(getPath(), "colorScheme"));
   }, []);
 
-  const headerBackground = `/img/header/${categoryName}/${categoryFeatured}.webp`;
+  const headerBackground = `/img/header/${categoryType}/${categoryFeatured}.webp`;
   console.log(headerBackground)
 
   const Container = styled.header`
@@ -91,7 +97,7 @@ export const Header = (props: IProps) => {
               <div className="hashtags">#{directory}</div>
             </div>
               <div className="searchbar-foreground" style={{
-                background: `linear-gradient(180deg, transparent 75%, rgb(23, 23, 25) 100%), url("/img/model/${categoryName}/${categoryFeatured}.webp") top / cover`,
+                background: `linear-gradient(180deg, transparent 75%, rgb(23, 23, 25) 100%), url("/img/model/${categoryType}/${categoryFeatured}.webp") top / cover`,
               }} />
           </div>
         </div>
