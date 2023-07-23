@@ -53,7 +53,7 @@ export default function Credits() {
             <div className='txt'>
               Head UX & UI Designer<br/>
               Lead Feature Programmer<br/>
-              Lead Front-end Developer<br/>
+              Support Front-end Developer<br/>
               <div className='social'>
                 <Link href={'https://twitter.com/naibuuhawkwer'}>
                   <FontAwesomeIcon icon={faTwitter} width={28} height={19}/>

@@ -34,6 +34,11 @@ div.global-search {
     }
   }
 
+  a {
+    color: #ababab;
+    text-decoration: none;
+  }
+
   div.search-results {
     width: 100%;
 
@@ -82,7 +87,7 @@ div.global-search {
         gap: 0;
 
         flex-grow: 100;
-
+        
         h2,
         p {
           line-height: normal;

@@ -1,14 +1,28 @@
+'use client'
+
 import '@/scss/components/nav.scss'
 
-import React from 'react'
+import React, { useEffect } from 'react'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components'
 
 import { Dropdown, GlobalSearch } from '@/components'
 
 import { Categories } from '@/data/Categories/index'
 
 import { NavLinks } from '@/data/Nav'
+
+interface ItemProps {
+  $background?: string
+}
+
+const Item = styled.div<ItemProps>`
+  &::before {
+    background: url(${(props) => props.$background}.webp) no-repeat 50% 50% / cover;
+  }
+`
 
 export const Nav = () => {
   return (
@@ -26,17 +40,17 @@ export const Nav = () => {
             Buy me a coffee!
           </Link>
           <Dropdown text="Categories">
-          {Categories.map((item: any) => (
-            <Link key={item.id} href={`/c/${item.type}`} className='categoryItem'>
-              <div>
-                {item.name}
-              </div>
-            </Link>
-          ))}
+            {Categories.map((item: any) => (
+              <Link key={item.id} href={`/c/${item.type}`} className='categoryItem'>
+                <Item $background={`/img/header/${item.type}/${item.featured}`}>
+                  {item.name}
+                </Item>
+              </Link>
+            ))}
           </Dropdown>
-          {NavLinks.map(({ text, remote }) => (
-            <Link href={remote}>{text}</Link>
-          ))}
+            {NavLinks.map(({ text, remote }) => (
+              <Link href={remote}>{text}</Link>
+            ))}
           <GlobalSearch />
         </div>
       </div>

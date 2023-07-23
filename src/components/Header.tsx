@@ -8,7 +8,6 @@ import styled from 'styled-components'
 import { Search } from './Filter/Search'
 
 import { Categories } from '@/data/Categories/index'
-import { RgbColor } from 'polished/lib/types/color'
 
 interface IProps {
   queryFilter: (query: string) => void
