@@ -3,6 +3,7 @@ import { IVTuber } from './Types'
 import { Doggirls } from './Doggirls'
 import { Catgirls } from './Catgirls'
 import { Foxgirls } from './Foxgirls'
+import { Froggirls } from './Froggirls'
 
 interface Category {
   type: string
@@ -38,8 +39,15 @@ export const Categories: Category[] = [
     featured: 'anny',
     colorScheme: '230, 180, 180',
   },
+  {
+    type: 'froggirls',
+    name: 'Froggirls',
+    list: Froggirls,
+    featured: 'amiamami',
+    colorScheme: '102, 100, 194',
+  },
 ]
 
 export const Global: Global = {
-  list: [...Doggirls, ...Catgirls, ...Foxgirls],
+  list: [...Doggirls, ...Catgirls, ...Foxgirls, ...Froggirls],
 }
