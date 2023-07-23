@@ -18,6 +18,8 @@ async function getUserFromParams(params: IProps['params']) {
   return user || null
 }
 
+export const runtime = 'edge';
+
 export async function generateStaticParams(): Promise<IProps['params'][]> {
   return (Global.list || []).map((vtuber) => ({
     slug: [vtuber.username],

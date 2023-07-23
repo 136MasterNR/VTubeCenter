@@ -18,6 +18,8 @@ async function getCategoryFromParams(params: IProps['params']) {
   return category || null
 }
 
+export const runtime = 'edge';
+
 export async function generateStaticParams(): Promise<IProps['params'][]> {
   return Categories.map((category) => ({
     slug: category.type.split('/'),
