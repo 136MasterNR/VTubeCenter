@@ -1,56 +1,70 @@
 .credits {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
+  position: relative;
   height: 100%;
   width: 100%;
 
-  gap: 100px;
+  top: 15vh;
 
-  .user {
+  .title {
+    position: relative;
+    text-align: center;
+    
+    margin-bottom: 30px;
+    
+    color: white;
+    font-size: 32px;
+  }
+
+  .people {
+    position: relative;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
 
-    top: 20vh;
+    gap: 100px;
 
-    position: relative;
+    .individual {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
 
-    > .about {
-      margin: auto auto;
+      position: relative;
 
-      .name {
-        color: white;
-        font-size: 24px;
-        font-weight: 600;
-      }
+      > .about {
+        margin: auto auto;
 
-      .txt {
-        color: rgb(225, 225, 225);
-        font-size: 18px;
-        font-weight: 600;
+        .name {
+          color: white;
+          font-size: 24px;
+          font-weight: 600;
+        }
 
-        .social {
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
+        .txt {
+          color: rgb(225, 225, 225);
+          font-size: 18px;
+          font-weight: 600;
 
-          font-size: 28px;
+          .social {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
 
-          > a svg {
-            color: white;
+            font-size: 28px;
+
+            > a svg {
+              color: white;
+            }
           }
         }
       }
-    }
-    
-    > img {
-      width: 128px;
-      height: 128px;
 
-      border-radius: 25px;
+      > img {
+        width: 128px;
+        height: 128px;
+  
+        border-radius: 25px;
+      }
     }
   }
 }
