@@ -4,7 +4,6 @@ import { Doggirls } from './Doggirls'
 import { Catgirls } from './Catgirls'
 import { Foxgirls } from './Foxgirls'
 import { Froggirls } from './Froggirls'
-
 import { Humangirls } from './Humangirls'
 
 interface Category {

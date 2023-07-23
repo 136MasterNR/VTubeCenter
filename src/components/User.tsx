@@ -1,9 +1,29 @@
-import React from 'react'
+
+'use client'
+
+import '@/scss/user.scss'
+
+import React, { useState } from 'react'
+import Image from 'next/image'
+
+import Link from 'next/link'
 
 interface IProps {
-  name: string
+  info: any
 }
 
-export function UserPage({ name }: IProps) {
-  return <h1>{name}</h1>
+export function UserPage({ info }: IProps) {
+  const [profileSrc, setProfileSrc] = useState(`/img/model/doggirls/${info.username}.webp`);
+
+  return  (
+    <>
+    <div className='profile'>
+      <div className='name'>
+        {info.name}
+      </div>
+      <div className='description'>{info.description}</div>
+      <img src={profileSrc} alt={info.name} onError={() => setProfileSrc('/img/model/doggirls/unknown.webp')} />
+    </div>
+    </>
+  )
 }
