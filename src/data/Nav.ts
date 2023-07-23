@@ -1,11 +1,11 @@
 interface NavLink {
-    text: string
-    remote: string
+  text: string
+  remote: string
 }
 
 export const NavLinks: NavLink[] = [
-    {
-        text: 'Credits',
-        remote: '/credits',
-    },
+  {
+    text: 'Credits',
+    remote: '/credits',
+  },
 ]

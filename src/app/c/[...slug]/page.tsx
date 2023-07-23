@@ -37,9 +37,7 @@ export default async function Page({ params }: IProps) {
     <main>
       {category.list ? (
         <CategoryPage key={category.type} content={category.list} />
-      ) : (
-        <h2>There isn't anything to look at??</h2>
-      )}
+      ) : null }
     </main>
   )
 }

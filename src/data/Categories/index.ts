@@ -5,6 +5,8 @@ import { Catgirls } from './Catgirls'
 import { Foxgirls } from './Foxgirls'
 import { Froggirls } from './Froggirls'
 
+import { Humangirls } from './Humangirls'
+
 interface Category {
   type: string
   name: string
@@ -46,8 +48,15 @@ export const Categories: Category[] = [
     featured: 'amiamami',
     colorScheme: '102, 100, 194',
   },
+  {
+    type: 'humangirls',
+    name: 'Humangirls',
+    list: Humangirls,
+    featured: '',
+    colorScheme: '200, 200, 200',
+  },
 ]
 
 export const Global: Global = {
-  list: [...Doggirls, ...Catgirls, ...Foxgirls, ...Froggirls],
+  list: [...Doggirls, ...Catgirls, ...Foxgirls, ...Froggirls, ...Humangirls],
 }

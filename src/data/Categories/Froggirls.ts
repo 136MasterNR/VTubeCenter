@@ -19,7 +19,7 @@ export const Froggirls: IVTuber[] = [
     name: 'Ami Amami',
     username: 'amiamami',
     description:
-      'Ami is a very energetic froggo, who likes to pog a lot. She likes to play games on stream and cover songs.',
+      'Ami is a very energetic froggo, who likes to pog a lot. She likes to play games on stream and sing song covers.',
     language: 'English',
     affiliation: 'PRISM Project',
     affiliationURL: 'https://www.prismproject.jp/#section-f_b0c22c12-a785-4865-a83d-2c5a47824202',
