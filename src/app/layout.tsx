@@ -19,8 +19,11 @@ export const metadata = {
   ],
   google: 'notranslate',
   rating: 'general',
-  themeColor: "#35afca",
   googleSiteVerification: 'u_JknkJF5JDYvj-PzNGwOc2XQ0XRfryIgr8PeF0y3Vc',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'cyan' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
   openGraph: {
     type: 'website',
     locale: 'en-US',
