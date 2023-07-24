@@ -306,7 +306,7 @@ export const Doggirls: IVTuber[] = [
   },
   {
     name: 'Feef',
-    username: 'feefch',
+    username: 'feef',
     description: 'No description provided.',
     language: 'English',
     colorScheme: rgb(221, 184, 147),

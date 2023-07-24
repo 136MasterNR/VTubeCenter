@@ -33,8 +33,6 @@ export default async function Page({ params }: IProps) {
     return <h2>not found</h2>
   }
 
-  console.log(Global)
-
   return (
     <main>
       <UserPage key={user.username} info={user} />
