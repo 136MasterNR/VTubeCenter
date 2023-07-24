@@ -216,10 +216,10 @@
           filter: brightness(0.4) blur(4px);
         }
 
-        transition: 0.2s transform;
+        transition: 0.25s transform;
 
         &:hover {
-          transform: translateY(-2.75px);
+          transform: translateY(-3px);
         }
       }
 
