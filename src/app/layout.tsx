@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'VTube Center',
-  description: 'Get a list of every anime Virtual Doggirl in the world!',
+  description: 'Get a list of every single VTuber in the world!',
   keywords: [
     'virtual',
     'doggirls',
@@ -19,12 +19,15 @@ export const metadata = {
   ],
   google: 'notranslate',
   rating: 'general',
+  themeColor: "#35afca",
   googleSiteVerification: 'u_JknkJF5JDYvj-PzNGwOc2XQ0XRfryIgr8PeF0y3Vc',
   openGraph: {
     type: 'website',
     locale: 'en-US',
     title: 'VTube Center',
-    description: 'Get a list of every anime Virtual Doggirl in the world!',
+    description: 'Get a list of every single VTuber in the world!',
+    images:
+      'https://github.com/136MasterNR/VTubeCenter/raw/migration/app/public/img/seo/embed.jpg',
   },
   twitter: {
     images:
@@ -32,7 +35,6 @@ export const metadata = {
     title: 'VTube Center',
     card: 'summary_large_image',
     creator: '@136MasterNR and @Naibuu',
-    themeColor: "#35afca",
   },
 }
 
