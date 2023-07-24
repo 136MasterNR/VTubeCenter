@@ -32,6 +32,7 @@ export const metadata = {
     title: 'VTube Center',
     card: 'summary_large_image',
     creator: '@136MasterNR and @Naibuu',
+    themeColor: "#35afca",
   },
 }
 

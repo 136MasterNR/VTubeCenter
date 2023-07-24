@@ -1,4 +1,3 @@
-
 'use client'
 
 import '@/scss/user.scss'
