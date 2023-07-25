@@ -89,7 +89,7 @@ header {
 
       gap: 10px;
 
-      input {
+      input.inner-searchbar {
         width: 390px;
         height: 45px;
 
@@ -106,8 +106,11 @@ header {
         font-weight: 400;
         line-height: normal;
 
+        outline: solid 3px rgba(0, 0, 0, 0.075);
+        outline-offset: -3px;
+
         &:focus {
-          outline: none;
+          outline-color: rgba(0, 0, 0, 0.2);
         }
       }
 
@@ -126,9 +129,26 @@ header {
           color: white;
           font-size: 20px;
           filter: drop-shadow(0 2px 0 rgba(0 0 0 / 20%));
+
+          transition: transform ease-in-out 0.2s;
         }
 
         cursor: pointer;
+
+        transition: outline ease-in-out 0.2s, outline-offset ease-in-out 0.2s;
+        outline-offset: 0px;
+        outline: solid 0px rgba(0, 0, 0, 0.2);
+
+        &:active {
+          transition: none;
+          outline: solid 4px rgba(0, 0, 0, 0.2);
+          outline-offset: -4px;
+
+          svg {
+            transition: none;
+            transform: scale(0.9);
+          }
+        }
       }
 
       div.hashtags {
