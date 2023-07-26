@@ -789,6 +789,23 @@ export const Doggirls: IVTuber[] = [
     ],
   },
   {
+    name: 'Oyu',
+    username: 'oyusum',
+    description: 'No description provided.',
+    language: 'Japanese',
+    colorScheme: rgb(221, 194, 200),
+    social_media: [
+      {
+        icon: faTwitch,
+        url: 'https://www.youtube.com/channel/UCQ1OcBFSr7GM9o60ZWIo6Eg',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/oyusum',
+      },
+    ],
+  },
+  {
     name: 'Art',
     username: 'artstudebt',
     description: 'No description provided.',

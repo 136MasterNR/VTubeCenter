@@ -64,13 +64,13 @@ export const VTuber = (props: IProps) => {
   }
 
   return (
-    <Link href={`/u/${username}`}>
       <div
         className="vtuber"
         style={{
           background: `linear-gradient(45deg, ${colorScheme}30 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`,
         }}
       >
+      <Link href={`/u/${username}`}>
         <div className="header">
           <Image
             src={`/img/header/${getPath()}/${username}.webp`}
@@ -82,70 +82,70 @@ export const VTuber = (props: IProps) => {
           />
         </div>
 
-        <div className="avatar">
-          <Image
-            src={`/img/avatar/${getPath()}/${username}.webp`}
-            alt={username}
-            loading="lazy"
-            draggable={false}
-            width={85}
-            height={85}
-          />
-        </div>
-
-        <div className="badges">
-          <div
-            className={`language ${fontJP.className}`}
-            style={{
-              backgroundColor: `${colorScheme}`,
-            }}
-          >
-            {language}
-          </div>
-          {featured ? (
-            <Tippy content={<>Featured</>} allowHTML={true}>
-              <div
-                className="featured"
-                style={{
-                  backgroundColor: `${colorScheme}`,
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faStar}
-                  width={19}
-                  height={19}
-                  color="white"
-                />
-              </div>
-            </Tippy>
-          ) : null}
-        </div>
-
-        <div className="social_media">
-          {social_media.map((media, index) => (
-            <Icon
-              key={index}
-              icon={media.icon}
-              remote={media.url}
-              size={26}
-              aria-label={media.icon}
-            />
-          ))}
-        </div>
-
-        <div className={`name ${fontJP.className}`}>{name}</div>
-
-        <div className={`affiliation ${fontJP.className}`}>
-          {affiliation !== 'Independent' ? (
-            <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faBuildingUser} width={19} height={19} />
-              {affiliation}
-            </a>
-          ) : null}
-        </div>
-
-        <div className="description">{description}</div>
+      <div className="avatar">
+        <Image
+          src={`/img/avatar/${getPath()}/${username}.webp`}
+          alt={username}
+          loading="lazy"
+          draggable={false}
+          width={85}
+          height={85}
+        />
       </div>
-    </Link>
+      </Link>
+
+      <div className="badges">
+        <div
+          className={`language ${fontJP.className}`}
+          style={{
+            backgroundColor: `${colorScheme}`,
+          }}
+        >
+          {language}
+        </div>
+        {featured ? (
+          <Tippy content={<>Featured</>} allowHTML={true}>
+            <div
+              className="featured"
+              style={{
+                backgroundColor: `${colorScheme}`,
+              }}
+            >
+              <FontAwesomeIcon
+                icon={faStar}
+                width={19}
+                height={19}
+                color="white"
+              />
+            </div>
+          </Tippy>
+        ) : null}
+      </div>
+
+      <div className="social_media">
+        {social_media.map((media, index) => (
+          <Icon
+            key={index}
+            icon={media.icon}
+            remote={media.url}
+            size={26}
+            aria-label={media.icon}
+          />
+        ))}
+      </div>
+
+      <div className={`name ${fontJP.className}`}>{name}</div>
+
+      <div className={`affiliation ${fontJP.className}`}>
+        {affiliation !== 'Independent' ? (
+          <a href={affiliationURL} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faBuildingUser} width={19} height={19} />
+            {affiliation}
+          </a>
+        ) : null}
+      </div>
+
+      <div className="description">{description}</div>
+    </div>
   )
 }
