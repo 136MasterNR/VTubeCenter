@@ -6,6 +6,7 @@ import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { Icon } from './Common/Icon'
@@ -51,16 +52,17 @@ export const VTuber = (props: IProps) => {
     social_media,
   } = props
 
-  const [Dir, setDir] = useState('')
   function getPath() {
-    const [Dir, setDir] = useState('')
+    const [dir, setDir] = useState('');
+  
+    const router = usePathname();
   
     useEffect(() => {
-      let newDir: any = window.location.pathname.split('/').pop()
-      newDir ? setDir(newDir) : setDir('doggirls')
-    }, [])
+      const newDir = router.split('/').pop();
+      newDir ? setDir(newDir) : setDir('doggirls');
+    }, [router]);
   
-    return Dir
+    return dir;
   }
 
   return (

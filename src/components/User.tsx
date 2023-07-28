@@ -22,6 +22,7 @@ export function UserPage({ info }: IProps) {
       </div>
       <div className='description'>{info.description}</div>
       <img src={profileSrc} alt={info.name} onError={() => setProfileSrc('/img/model/doggirls/unknown.webp')} />
+      [{info.category}]
     </div>
     </>
   )
