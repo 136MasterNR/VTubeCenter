@@ -106,6 +106,8 @@ header {
         font-weight: 400;
         line-height: normal;
 
+        outline: none;
+
         &:focus {
           outline-color: rgba(0, 0, 0, 0.2);
         }
