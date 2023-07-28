@@ -11,7 +11,7 @@ import {
   faInstagram,
   faTiktok,
   faFacebook,
-  faReddit
+  faReddit,
 } from '@fortawesome/free-brands-svg-icons'
 
 export const Humangirls: IVTuber[] = []

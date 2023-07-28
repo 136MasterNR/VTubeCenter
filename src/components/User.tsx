@@ -12,17 +12,21 @@ interface IProps {
 }
 
 export function UserPage({ info }: IProps) {
-  const [profileSrc, setProfileSrc] = useState(`/img/model/doggirls/${info.username}.webp`);
+  const [profileSrc, setProfileSrc] = useState(
+    `/img/model/doggirls/${info.username}.webp`
+  )
 
-  return  (
+  return (
     <>
-    <div className='profile'>
-      <div className='name'>
-        {info.name}
+      <div className="profile">
+        <div className="name">{info.name}</div>
+        <div className="description">{info.description}</div>
+        <img
+          src={profileSrc}
+          alt={info.name}
+          onError={() => setProfileSrc('/img/model/doggirls/unknown.webp')}
+        />
       </div>
-      <div className='description'>{info.description}</div>
-      <img src={profileSrc} alt={info.name} onError={() => setProfileSrc('/img/model/doggirls/unknown.webp')} />
-    </div>
     </>
   )
 }

@@ -28,19 +28,18 @@ export function Search({
   }
 
   const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-      switch (e.key) {
-        case 'Enter':
-          handleSearch()
-          break
-        default:
-          break
-      }
+    switch (e.key) {
+      case 'Enter':
+        handleSearch()
+        break
+      default:
+        break
+    }
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setQuery(value)
-
   }
 
   const handleInputFocus = () => {

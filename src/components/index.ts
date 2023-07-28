@@ -11,4 +11,14 @@ import { GlobalSearch } from './Filter/GlobalSearch'
 import { CategoryPage } from './Category'
 import { UserPage } from './User'
 
-export { Header, VTuber, Icon, Skeleton, Dropdown, Search, GlobalSearch, CategoryPage, UserPage }
+export {
+  Header,
+  VTuber,
+  Icon,
+  Skeleton,
+  Dropdown,
+  Search,
+  GlobalSearch,
+  CategoryPage,
+  UserPage,
+}
