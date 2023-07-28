@@ -63,8 +63,7 @@ export const Foxgirls: IVTuber[] = [
   {
     name: 'Kotonoha Yukino',
     username: 'kotonoha_yukino',
-    description:
-      'No description provided.',
+    description: 'No description provided.',
     language: 'Japanese',
     colorScheme: rgb(192, 161, 210),
     social_media: [
@@ -81,8 +80,7 @@ export const Foxgirls: IVTuber[] = [
   {
     name: 'Kokuri Kurune',
     username: 'kokuri_kurune',
-    description:
-      'No description provided.',
+    description: 'No description provided.',
     language: 'Japanese',
     colorScheme: rgb(213, 157, 212),
     social_media: [
@@ -103,8 +101,7 @@ export const Foxgirls: IVTuber[] = [
   {
     name: 'Kokuto',
     username: 'kokuto',
-    description:
-      'No description provided.',
+    description: 'No description provided.',
     language: 'Japanese',
     colorScheme: rgb(213, 134, 187),
     social_media: [

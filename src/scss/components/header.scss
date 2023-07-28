@@ -106,9 +106,6 @@ header {
         font-weight: 400;
         line-height: normal;
 
-        outline: solid 3px rgba(0, 0, 0, 0.075);
-        outline-offset: -3px;
-
         &:focus {
           outline-color: rgba(0, 0, 0, 0.2);
         }
@@ -141,7 +138,7 @@ header {
 
         &:active {
           transition: none;
-          outline: solid 4px rgba(0, 0, 0, 0.2);
+          outline: solid 4px rgba(255, 255, 255, 0.5);
           outline-offset: -4px;
 
           svg {

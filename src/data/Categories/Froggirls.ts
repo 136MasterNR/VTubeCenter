@@ -11,7 +11,7 @@ import {
   faInstagram,
   faTiktok,
   faFacebook,
-  faReddit
+  faReddit,
 } from '@fortawesome/free-brands-svg-icons'
 
 export const Froggirls: IVTuber[] = [
@@ -22,7 +22,8 @@ export const Froggirls: IVTuber[] = [
       'Ami is a very energetic froggo, who likes to pog a lot. She likes to play games on stream and sing song covers.',
     language: 'English',
     affiliation: 'PRISM Project',
-    affiliationURL: 'https://www.prismproject.jp/#section-f_b0c22c12-a785-4865-a83d-2c5a47824202',
+    affiliationURL:
+      'https://www.prismproject.jp/#section-f_b0c22c12-a785-4865-a83d-2c5a47824202',
     colorScheme: rgb(95, 120, 205),
     social_media: [
       {

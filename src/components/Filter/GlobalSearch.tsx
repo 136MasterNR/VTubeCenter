@@ -86,7 +86,9 @@ export const GlobalSearch: React.FC = () => {
             <Link key={vtuber.name} href={'/u/' + vtuber.username}>
               <div className="vtuber-card-row">
                 <Image
-                  src={`/img/avatar/${getCategoryType(vtuber)}/${vtuber.username}.webp`}
+                  src={`/img/avatar/${getCategoryType(vtuber)}/${
+                    vtuber.username
+                  }.webp`}
                   alt={vtuber.name}
                   loading="lazy"
                   draggable={false}
@@ -100,7 +102,9 @@ export const GlobalSearch: React.FC = () => {
                 <div
                   className="vtuber-card-bg"
                   style={{
-                    backgroundImage: `url(/img/header/${getCategoryType(vtuber)}/${vtuber.username}.webp)`,
+                    backgroundImage: `url(/img/header/${getCategoryType(
+                      vtuber
+                    )}/${vtuber.username}.webp)`,
                     backgroundSize: 'cover',
                   }}
                 />

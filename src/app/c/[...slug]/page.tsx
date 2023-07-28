@@ -18,7 +18,7 @@ async function getCategoryFromParams(params: IProps['params']) {
   return category || null
 }
 
-export const runtime = 'edge';
+export const runtime = 'edge'
 
 export async function generateStaticParams(): Promise<IProps['params'][]> {
   return Categories.map((category) => ({
@@ -37,7 +37,7 @@ export default async function Page({ params }: IProps) {
     <main>
       {category.list ? (
         <CategoryPage key={category.type} content={category.list} />
-      ) : null }
+      ) : null}
     </main>
   )
 }

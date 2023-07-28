@@ -11,10 +11,7 @@ import { usePathname } from 'next/navigation';
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { Icon } from './Common/Icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBuildingUser,
-  faStar
-} from '@fortawesome/free-solid-svg-icons'
+import { faBuildingUser, faStar } from '@fortawesome/free-solid-svg-icons'
 
 import { Noto_Sans_JP } from 'next/font/google'
 const fontJP = Noto_Sans_JP({
@@ -66,12 +63,12 @@ export const VTuber = (props: IProps) => {
   }
 
   return (
-      <div
-        className="vtuber"
-        style={{
-          background: `linear-gradient(45deg, ${colorScheme}30 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`,
-        }}
-      >
+    <div
+      className="vtuber"
+      style={{
+        background: `linear-gradient(45deg, ${colorScheme}30 0%,rgba(255, 255, 255, 0.15) 100%),rgb(45, 44, 63)`,
+      }}
+    >
       <Link href={`/u/${username}`}>
         <div className="header">
           <Image
@@ -84,16 +81,16 @@ export const VTuber = (props: IProps) => {
           />
         </div>
 
-      <div className="avatar">
-        <Image
-          src={`/img/avatar/${getPath()}/${username}.webp`}
-          alt={username}
-          loading="lazy"
-          draggable={false}
-          width={85}
-          height={85}
-        />
-      </div>
+        <div className="avatar">
+          <Image
+            src={`/img/avatar/${getPath()}/${username}.webp`}
+            alt={username}
+            loading="lazy"
+            draggable={false}
+            width={85}
+            height={85}
+          />
+        </div>
       </Link>
 
       <div className="badges">
