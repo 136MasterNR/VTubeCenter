@@ -272,6 +272,44 @@ export const Doggirls: IVTuber[] = [
     ],
   },
   {
+    name: 'Fuwawa',
+    username: 'fuwawa',
+    description: 'After a mischief that troubled even the gods, he was imprisoned in the Great Prison \"The Cell\". She calmly watches over her twin sister, Mokoko, and her pet, Pero, but it\'s all relative. She\'s what she is to the world, she\'s a noisemaker who loves to talk and play.',
+    language: 'English',
+    affiliation: 'Hololive Advent',
+    affiliationURL: 'https://hololive.hololivepro.com/talents?gp=advent',
+    colorScheme: rgb(139, 200, 255),
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCt9H_RpQzhxzlyBxFqrdHqA',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/fuwamoco_en',
+      },
+    ],
+  },
+  {
+    name: 'Mococo',
+    username: 'mococo',
+    description: 'After a prank that annoyed even the gods, he was imprisoned in the Great Prison \"The Cell\". She loves to talk and play. Even in prison, she spends her days immersed in anime and games, often trying to involve her twin sister Fuwawa and her pet Pero. Rumor has it that he took part in the jailbreak for fun.',
+    language: 'English',
+    affiliation: 'Hololive Advent',
+    affiliationURL: 'https://hololive.hololivepro.com/talents?gp=advent',
+    colorScheme: rgb(251, 174, 232),
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCt9H_RpQzhxzlyBxFqrdHqA',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/fuwamoco_en',
+      },
+    ],
+  },
+  {
     name: 'Enocinoco',
     username: 'enocinoco',
     description: 'No description provided.',
