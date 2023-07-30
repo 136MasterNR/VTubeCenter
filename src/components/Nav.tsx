@@ -32,7 +32,7 @@ export const Nav = () => {
         <div className="nav-content">
           <div className="nav-left">
             <Link href={'/'}>
-              <Image src="/favicon.ico" alt="logo" width={28} height={28} />
+              <Image src="/favicon.ico" alt="logo" width={28} height={28} /> . DEV
             </Link>
           </div>
           <div className="nav-right">

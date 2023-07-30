@@ -16,7 +16,6 @@ main.list {
   .vtuber {
     width: 450px;
     height: 333px;
-    cursor: pointer;
 
     transition: 0.08s transform, 0.2s background-color;
 
@@ -34,14 +33,16 @@ main.list {
     border-radius: 15px;
 
     a {
+      color: white;
+      text-decoration: none;
+      
       .header {
         overflow: hidden;
         width: 450px;
         height: 130px;
 
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
+        user-select: none;
+        cursor: pointer;
 
         img {
           display: flex;
@@ -57,30 +58,69 @@ main.list {
           mask-image: url('/img/header/mask.svg');
           mask-position: 0px center;
           mask-size: 435px 110px;
+
+          transition: filter ease-out 0.15s;
+        }
+
+        div.meet {
+          display: flex;
+          justify-content: center;
+          
+          position: relative;
+          top: -78px;
+
+          width: fit-content;
+          height: fit-content;
+          padding: 4px 7px;
+
+          border: solid 4px rgb(76, 75, 92);
+          border-radius: 11px;
+
+          margin-left: auto;
+          margin-right: 30px;
+
+          .text {
+            position: relative;
+            margin: auto 0;
+
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          filter: opacity(0);
+
+          transition: filter ease-out 0.15s;
+        }
+
+        &:hover {
+          img {
+            filter: brightness(1.05);
+          }
+          div.meet {
+            filter: opacity(1) brightness(1.025);
+          }
         }
       }
+    }
 
-      .avatar {
-        position: relative;
-        top: -55px;
-        right: -10.25px;
+    .avatar {
+      position: relative;
+      top: -55px;
+      right: -10.25px;
 
-        width: fit-content;
-        min-height: 90px;
+      width: fit-content;
+      min-height: 90px;
 
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
+      user-select: none;
 
-        img {
-          width: 85px;
-          height: auto;
+      img {
+        width: 85px;
+        height: auto;
 
-          background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
 
-          border-radius: 20px;
-          margin: 5px;
-        }
+        border-radius: 20px;
+        margin: 5px;
       }
     }
 
