@@ -676,11 +676,36 @@ export const Doggirls: IVTuber[] = [
     ],
   },
   {
+    name: 'Kanna Tamachi',
+    username: 'kannatamachi',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: rgb(250, 197, 185),
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@kanna.tamachi',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/kannatamachi',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/kannatamachi',
+      },
+      {
+        icon: faFacebook,
+        url: 'https://www.facebook.com/people/Kanna-Tamachi/100063623079884/',
+      },
+    ],
+  },
+  {
     name: 'Kimicchi',
     username: 'kimicchi_ch',
     description: 'No description provided.',
     language: 'English',
-    colorScheme: rgb(211, 212, 219),
+    colorScheme: rgb(190, 220, 220),
     social_media: [
       {
         icon: faYoutube,
