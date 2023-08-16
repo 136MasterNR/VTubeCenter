@@ -679,7 +679,7 @@ export const Doggirls: IVTuber[] = [
     name: 'Kanna Tamachi',
     username: 'kannatamachi',
     description: 'No description provided.',
-    language: 'English',
+    language: 'Indonesia',
     colorScheme: rgb(250, 197, 185),
     social_media: [
       {
