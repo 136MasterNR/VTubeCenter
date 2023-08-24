@@ -1041,6 +1041,35 @@ export const Doggirls: IVTuber[] = [
     ],
   },
   {
+    name: 'Annie',
+    username: 'anniepants02_',
+    description: 'No description provided.',
+    language: 'English',
+    colorScheme: rgb(254, 87, 124),
+    social_media: [
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/@Anniepants',
+      },
+      {
+        icon: faTwitch,
+        url: 'https://www.twitch.tv/anniepants02',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/AnniePants02_',
+      },
+      {
+        icon: faDiscord,
+        url: 'https://discord.com/invite/anniepants',
+      },
+      {
+        icon: faInstagram,
+        url: 'https://www.instagram.com/anniepants02/',
+      },
+    ],
+  },
+  {
     name: 'Ribbon',
     username: 'ribbonfemale',
     description: 'No description provided.',
