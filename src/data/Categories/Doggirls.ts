@@ -1202,4 +1202,38 @@ export const Doggirls: IVTuber[] = [
       },
     ],
   },
+  {
+    name: '木漏日わんこ',
+    username: 'wanko111111111',
+    description: 'No description provided.',
+    language: 'Japanese',
+    colorScheme: rgb(2, 27, 216),
+    social_media: [
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/wanko111111111',
+      },
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UC89idUWk3ji2GFvVJPElPLQ',
+      },
+    ],
+  },
+  {
+    name: '癒音くるみ🐶❤️9/7 誕生日!',
+    username: 'kurumi_UoxoU',
+    description: 'No description provided.',
+    language: 'Japanese',
+    colorScheme: rgb(178, 57, 152),
+    social_media: [
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/kurumi_UoxoU',
+      },
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/channel/UCBJFtEEDnCpz8koPH-nLWUA',
+      },
+    ],
+  },
 ]
